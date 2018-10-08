@@ -1,0 +1,25 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 7, 2018
+ *      Author: Eng Ali Gamal
+ */
+
+
+#define F_CPU 12000000UL
+#include <avr/io.h>
+#include <util/delay.h>
+
+int main(void)
+{
+	DDRD |= 1<<PD3; // set PB6 to output
+
+	while (1)
+	{
+		PORTD &= ~(1<<PD3); // LED on
+		_delay_ms(100);
+		PORTD |= 1<<PD3; // LED off
+		_delay_ms(900);
+	}
+	return 0;
+}
