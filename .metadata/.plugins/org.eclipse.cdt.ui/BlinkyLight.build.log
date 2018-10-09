@@ -1,9 +1,8 @@
-12:00:08 **** Incremental Build of configuration Release for project BlinkyLight ****
+01:30:39 **** Incremental Build of configuration Release for project BlinkyLight ****
 make all 
 Building file: ../main.c
 Invoking: AVR Compiler
 avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-../main.c:11:24: warning: extra tokens at end of #include directive
 Finished building: ../main.c
  
 Building target: BlinkyLight.elf
@@ -30,26 +29,26 @@ avrdude: erasing chip
 avrdude: warning: cannot set sck period. please check for usbasp firmware update.
 avrdude: reading input file "BlinkyLight.hex"
 avrdude: input file BlinkyLight.hex auto detected as Intel Hex
-avrdude: writing flash (198 bytes):
+avrdude: writing flash (206 bytes):
 
-Writing | ################################################## | 100% 0.13s
+Writing | ################################################## | 100% 0.14s
 
-avrdude: 198 bytes of flash written
+avrdude: 206 bytes of flash written
 avrdude: verifying flash memory against BlinkyLight.hex:
 avrdude: load data flash data from input file BlinkyLight.hex:
 avrdude: input file BlinkyLight.hex auto detected as Intel Hex
-avrdude: input file BlinkyLight.hex contains 198 bytes
+avrdude: input file BlinkyLight.hex contains 206 bytes
 avrdude: reading on-chip flash data:
 
-Reading | ################################################## | 100% 0.11s
+Reading | ################################################## | 100% 0.10s
 
 avrdude: verifying ...
-avrdude: 198 bytes of flash verified
+avrdude: 206 bytes of flash verified
 
 avrdude done.  Thank you.
 
 Finished building: avrdudedummy
  
 
-12:00:10 Build Finished (took 1s.997ms)
+01:30:41 Build Finished (took 2s.744ms)
 

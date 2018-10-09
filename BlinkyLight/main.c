@@ -4,27 +4,29 @@
  *  Created on: Oct 7, 2018
  *      Author: Eng Ali Gamal
  */
-
-#include <util/delay.h>I
-#define F_CPU 12000000UL
 #include <avr/io.h>
+#include <util/delay.h>
+#define F_CPU 12000000UL
+
 
 
 int main(void)
 {
-	DDRD = 0b11111111;
+	DDRD = 0b11111111; // set out put DDRD
 
 	while(1)
 	{
-		PORTD = 0b00000011;
+		PORTD = 0b11111111; // Led on
+		_delay_ms(500); 	// delay
+		PORTD = 0b00000000;	// led off
 		_delay_ms(500);
-		PORTD = 0b00000111;
+		PORTD = 0b11111111;
 		_delay_ms(500);
-		PORTD = 0b00001111;
+		PORTD = 0b010000000;
 		_delay_ms(500);
-		PORTD = 0b01001111;
+		PORTD = 0b11111111;
 		_delay_ms(500);
-		PORTD = 0b01101111;
+
 
 	}
 	return 0;
