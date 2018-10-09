@@ -1,0 +1,40 @@
+22:41:24 **** Incremental Build of configuration Debug for project 7-segment ****
+make all 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:7-segment.hex:a
+
+avrdude: warning: cannot set sck period. please check for usbasp firmware update.
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e9502
+avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: warning: cannot set sck period. please check for usbasp firmware update.
+avrdude: reading input file "7-segment.hex"
+avrdude: input file 7-segment.hex auto detected as Intel Hex
+avrdude: writing flash (7774 bytes):
+
+Writing | ################################################## | 100% 5.14s
+
+avrdude: 7774 bytes of flash written
+avrdude: verifying flash memory against 7-segment.hex:
+avrdude: load data flash data from input file 7-segment.hex:
+avrdude: input file 7-segment.hex auto detected as Intel Hex
+avrdude: input file 7-segment.hex contains 7774 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 3.81s
+
+avrdude: verifying ...
+avrdude: 7774 bytes of flash verified
+
+avrdude done.  Thank you.
+
+Finished building: avrdudedummy
+ 
+
+22:41:34 Build Finished (took 9s.411ms)
+
