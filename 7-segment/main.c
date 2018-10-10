@@ -97,7 +97,7 @@
 #include "REGISTERS.h"
 #include "DIO.h"
 
-/*int main(void) {
+int main(void) {
 
  DDRD = 0b11111111; // out put port "D"
 
@@ -127,21 +127,6 @@
 
  }
 
- }*/
+ }
 
-int main(void) {
-	uint8_t i;
-	DDRD = 0xff;
-
-	while (1) {
-		for (i = 0; i <= 7; i++) {
-
-			PORTD = (1 << i);
-			_delay_ms(1000);
-
-		}
-
-	}
-	return 0;
-}
 

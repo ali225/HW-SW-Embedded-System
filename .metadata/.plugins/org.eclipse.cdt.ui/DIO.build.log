@@ -1,21 +1,5 @@
-11:19:21 **** Incremental Build of configuration Release for project DIO ****
+12:11:53 **** Incremental Build of configuration Release for project DIO ****
 make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:8:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-Finished building: ../main.c
- 
-Building target: DIO.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO.o ./main.o   
-Finished building target: DIO.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
-Finished building: DIO.hex
- 
 Invoking: AVRDude
 C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:DIO.hex:a
 
@@ -31,26 +15,26 @@ avrdude: erasing chip
 avrdude: warning: cannot set sck period. please check for usbasp firmware update.
 avrdude: reading input file "DIO.hex"
 avrdude: input file DIO.hex auto detected as Intel Hex
-avrdude: writing flash (922 bytes):
+avrdude: writing flash (848 bytes):
 
-Writing | ################################################## | 100% 0.63s
+Writing | ################################################## | 100% 0.57s
 
-avrdude: 922 bytes of flash written
+avrdude: 848 bytes of flash written
 avrdude: verifying flash memory against DIO.hex:
 avrdude: load data flash data from input file DIO.hex:
 avrdude: input file DIO.hex auto detected as Intel Hex
-avrdude: input file DIO.hex contains 922 bytes
+avrdude: input file DIO.hex contains 848 bytes
 avrdude: reading on-chip flash data:
 
-Reading | ################################################## | 100% 0.46s
+Reading | ################################################## | 100% 0.42s
 
 avrdude: verifying ...
-avrdude: 922 bytes of flash verified
+avrdude: 848 bytes of flash verified
 
 avrdude done.  Thank you.
 
 Finished building: avrdudedummy
  
 
-11:19:24 Build Finished (took 2s.841ms)
+12:11:55 Build Finished (took 1s.711ms)
 

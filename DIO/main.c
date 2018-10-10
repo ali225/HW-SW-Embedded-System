@@ -12,29 +12,44 @@
 #include "DIO.h"
 #define F_CPU 12000000UL
 
+/*int main(void)
+ {
 
-int main(void)
-{
+
+ while(1)
+ {
+ DIO_VidSetPinDirection(3,1,1);
+ DIO_VidSetPinDirection(3,2,1);
+
+ //	DIO_VidSetPinValue(3,1,1);
+
+ DIO_VidSetPinValue(3,1,0);
+ _delay_ms(5000);
+ DIO_VidSetPinValue(3,1,1);
+ _delay_ms(5000);
+ DIO_VidSetPinValue(3,2,0);
+ _delay_ms(100);
+ DIO_VidSetPinValue(3,2,1);
+ _delay_ms(100);
+
+ }
 
 
-	while(1)
-		{
-			DIO_VidSetPinDirection(3,1,1);
-			DIO_VidSetPinDirection(3,2,1);
+ return 0;
+ }*/
 
-		//	DIO_VidSetPinValue(3,1,1);
+int main(void) {
+	uint8_t i;
+	DDRD = 0xff;
 
-			DIO_VidSetPinValue(3,1,0);
-			_delay_ms(5000);
-			DIO_VidSetPinValue(3,1,1);
-			_delay_ms(5000);
-			DIO_VidSetPinValue(3,2,0);
-			_delay_ms(100);
-			DIO_VidSetPinValue(3,2,1);
-			_delay_ms(100);
+	while (1) {
+		for (i = 7; i > 0; i--) {
+
+			PORTD = (1 << i);
+			_delay_ms(1000);
 
 		}
 
-
+	}
 	return 0;
 }

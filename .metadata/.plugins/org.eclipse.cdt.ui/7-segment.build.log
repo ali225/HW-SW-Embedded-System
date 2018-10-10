@@ -1,4 +1,4 @@
-22:41:24 **** Incremental Build of configuration Debug for project 7-segment ****
+12:11:30 **** Incremental Build of configuration Debug for project 7-segment ****
 make all 
 Invoking: AVRDude
 C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:7-segment.hex:a
@@ -17,7 +17,7 @@ avrdude: reading input file "7-segment.hex"
 avrdude: input file 7-segment.hex auto detected as Intel Hex
 avrdude: writing flash (7774 bytes):
 
-Writing | ################################################## | 100% 5.14s
+Writing | ################################################## | 100% 5.12s
 
 avrdude: 7774 bytes of flash written
 avrdude: verifying flash memory against 7-segment.hex:
@@ -26,7 +26,7 @@ avrdude: input file 7-segment.hex auto detected as Intel Hex
 avrdude: input file 7-segment.hex contains 7774 bytes
 avrdude: reading on-chip flash data:
 
-Reading | ################################################## | 100% 3.81s
+Reading | ################################################## | 100% 3.82s
 
 avrdude: verifying ...
 avrdude: 7774 bytes of flash verified
@@ -36,5 +36,5 @@ avrdude done.  Thank you.
 Finished building: avrdudedummy
  
 
-22:41:34 Build Finished (took 9s.411ms)
+12:11:40 Build Finished (took 9s.448ms)
 
