@@ -1,0 +1,40 @@
+17:25:21 **** Incremental Build of configuration Debug for project LCDone ****
+make all 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCDone.hex:a
+
+avrdude: warning: cannot set sck period. please check for usbasp firmware update.
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e9502
+avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: warning: cannot set sck period. please check for usbasp firmware update.
+avrdude: reading input file "LCDone.hex"
+avrdude: input file LCDone.hex auto detected as Intel Hex
+avrdude: writing flash (6252 bytes):
+
+Writing | ################################################## | 100% 4.21s
+
+avrdude: 6252 bytes of flash written
+avrdude: verifying flash memory against LCDone.hex:
+avrdude: load data flash data from input file LCDone.hex:
+avrdude: input file LCDone.hex auto detected as Intel Hex
+avrdude: input file LCDone.hex contains 6252 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 3.02s
+
+avrdude: verifying ...
+avrdude: 6252 bytes of flash verified
+
+avrdude done.  Thank you.
+
+Finished building: avrdudedummy
+ 
+
+17:25:29 Build Finished (took 7s.717ms)
+
