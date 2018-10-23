@@ -1,0 +1,9 @@
+12:50:35 **** Incremental Build of configuration Debug for project LCD_8bit ****
+make all 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_8bit.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+
+12:50:35 Build Finished (took 472ms)
+

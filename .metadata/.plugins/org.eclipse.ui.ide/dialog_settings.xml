@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\embedded system\Embedded Ali Gamal\HW - SW Embedded System"/>
+		<item value="D:\embedded system\Embedded Ali Gamal\HW - SW Embedded System\LCD_Test_8bit"/>
+		<item value="D:\embedded system\HW - SW\MyFirst"/>
 		<item value="D:\embedded system\HW - SW\LCDone"/>
 		<item value="D:\embedded system\HW - SW\LCd"/>
 	</list>

@@ -1,0 +1,6 @@
+19:47:26 **** Build of configuration Default for project MyFirst ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+19:47:26 Build Finished (took 382ms)
+

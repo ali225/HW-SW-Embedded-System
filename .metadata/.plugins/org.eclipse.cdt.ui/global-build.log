@@ -1,1941 +1,138 @@
-22:54:28 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./main.o   
-./LCD.o: In function `LCD_vidwriteCharacter':
-../LCD.c:16: undefined reference to `DIO_vidSetPortValue'
-../LCD.c:17: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:18: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:19: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:21: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:16: undefined reference to `DIO_vidSetPortValue'
-../LCD.c:17: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:18: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:19: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:21: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:16: undefined reference to `DIO_vidSetPortDirection'
-../LCD.c:17: undefined reference to `DIO_vidSetPinDirection'
-../LCD.c:18: undefined reference to `DIO_vidSetPinDirection'
-../LCD.c:19: undefined reference to `DIO_vidSetPinDirection'
-../LCD.c:16: undefined reference to `DIO_vidSetPortValue'
-../LCD.c:17: undefined reference to `DIO_vidSetPinValue'
-make: *** [LCD_Test.elf] Error 1
-22:54:51 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./main.o   
-./LCD.o: In function `LCD_vidwriteCharacter':
-../LCD.c:16: undefined reference to `DIO_vidSetPortValue'
-../LCD.c:17: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:18: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:19: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:21: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:16: undefined reference to `DIO_vidSetPortValue'
-../LCD.c:17: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:18: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:19: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:21: undefined reference to `DIO_vidSetPinValue'
-../LCD.c:16: undefined reference to `DIO_vidSetPortDirection'
-../LCD.c:17: undefined reference to `DIO_vidSetPinDirection'
-../LCD.c:18: undefined reference to `DIO_vidSetPinDirection'
-../LCD.c:19: undefined reference to `DIO_vidSetPinDirection'
-../LCD.c:16: undefined reference to `DIO_vidSetPortValue'
-../LCD.c:17: undefined reference to `DIO_vidSetPinValue'
-make: *** [LCD_Test.elf] Error 1
-22:56:33 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../DIO.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
-../DIO.c: In function 'DIO_vidSetPortValue':
-../DIO.c:27: error: 'PortA' undeclared (first use in this function)
-../DIO.c:27: error: (Each undeclared identifier is reported only once
-../DIO.c:27: error: for each function it appears in.)
-../DIO.c:28: error: 'PortB' undeclared (first use in this function)
-../DIO.c:29: error: 'PortC' undeclared (first use in this function)
-../DIO.c:30: error: 'PortD' undeclared (first use in this function)
-../DIO.c: In function 'DIO_vidSetPinValue':
-../DIO.c:79: error: 'PortA' undeclared (first use in this function)
-../DIO.c:87: error: 'PortB' undeclared (first use in this function)
-../DIO.c:95: error: 'PortC' undeclared (first use in this function)
-../DIO.c:103: error: 'PortD' undeclared (first use in this function)
-make: *** [DIO.o] Error 1
-23:29:04 **** Build of configuration Debug for project GPIO ****
-make all 
-Building file: ../DIO.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
-Finished building: ../DIO.c
- 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:8:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:8:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../main.c:12:1: warning: "F_CPU" redefined
-<command-line>: warning: this is the location of the previous definition
-Finished building: ../main.c
- 
-Building target: GPIO.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,GPIO.map -mmcu=atmega32 -o "GPIO.elf"  ./DIO.o ./main.o   
-Finished building target: GPIO.elf
- 
-Invoking: AVR Create Extended Listing
-avr-objdump -h -S GPIO.elf  >"GPIO.lss"
-Finished building: GPIO.lss
- 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 GPIO.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:    6686 bytes (20.4% Full)
-(.text + .data + .bootloader)
-
-Data:          8 bytes (0.4% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-23:29:07 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../DIO.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
-../DIO.c: In function 'DIO_vidSetPinValue':
-../DIO.c:79: error: 'PortA' undeclared (first use in this function)
-../DIO.c:79: error: (Each undeclared identifier is reported only once
-../DIO.c:79: error: for each function it appears in.)
-../DIO.c:87: error: 'PortB' undeclared (first use in this function)
-../DIO.c:95: error: 'PortC' undeclared (first use in this function)
-../DIO.c:103: error: 'PortD' undeclared (first use in this function)
-make: *** [DIO.o] Error 1
-23:29:27 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../DIO.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
-../DIO.c: In function 'DIO_vidSetPinValue':
-../DIO.c:79: error: 'PortA' undeclared (first use in this function)
-../DIO.c:79: error: (Each undeclared identifier is reported only once
-../DIO.c:79: error: for each function it appears in.)
-../DIO.c:87: error: 'PortB' undeclared (first use in this function)
-../DIO.c:95: error: 'PortC' undeclared (first use in this function)
-../DIO.c:103: error: 'PortD' undeclared (first use in this function)
-make: *** [DIO.o] Error 1
-23:29:45 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../DIO.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
-../DIO.c: In function 'DIO_vidSetPinValue':
-../DIO.c:79: error: 'PortA' undeclared (first use in this function)
-../DIO.c:79: error: (Each undeclared identifier is reported only once
-../DIO.c:79: error: for each function it appears in.)
-../DIO.c:95: error: 'PortC' undeclared (first use in this function)
-../DIO.c:103: error: 'PortD' undeclared (first use in this function)
-make: *** [DIO.o] Error 1
-23:30:20 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../DIO.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
-../DIO.c: In function 'DIO_vidSetPinValue':
-../DIO.c:79: error: 'PortA' undeclared (first use in this function)
-../DIO.c:79: error: (Each undeclared identifier is reported only once
-../DIO.c:79: error: for each function it appears in.)
-make: *** [DIO.o] Error 1
-23:30:37 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../DIO.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
-Finished building: ../DIO.c
- 
-Building file: ../LCD.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
-In file included from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../LCD.c
- 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-23:30:50 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-23:30:57 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-23:31:09 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-23:31:43 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-23:32:11 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-23:32:59 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../DIO.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
-Finished building: ../DIO.c
- 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-23:33:30 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../DIO.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
-Finished building: ../DIO.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-23:35:11 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../DIO.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
-Finished building: ../DIO.c
- 
-Building file: ../LCD.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
-In file included from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../LCD.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-23:35:47 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../DIO.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
-Finished building: ../DIO.c
- 
-Building file: ../LCD.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
-In file included from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../LCD.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-23:36:20 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../DIO.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
-Finished building: ../DIO.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-23:38:01 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../LCD.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
-In file included from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../LCD.c
- 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-23:38:07 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-12:00:02 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.01s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (17830 bytes):
-
-Writing | ################################################## | 100% 11.57s
-
-avrdude: 17830 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 17830 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 8.85s
-
-avrdude: verifying ...
-avrdude: 17830 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-13:34:34 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (17830 bytes):
-
-Writing | ################################################## | 100% 11.71s
-
-avrdude: 17830 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 17830 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 8.60s
-
-avrdude: verifying ...
-avrdude: 17830 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-13:36:00 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../LCD.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
-In file included from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../LCD.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (17830 bytes):
-
-Writing | ################################################## | 100% 11.63s
-
-avrdude: 17830 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 17830 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 8.60s
-Finished building: avrdudedummy
-
- 
-avrdude: verifying ...
-avrdude: 17830 bytes of flash verified
-
-avrdude done.  Thank you.
-
-13:36:51 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../LCD.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
-In file included from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../LCD.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (17830 bytes):
-
-Writing | ################################################## | 100% 11.74s
-
-avrdude: 17830 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 17830 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 8.61s
-
-avrdude: verifying ...
-avrdude: 17830 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-13:52:41 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../LCD.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
-In file included from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../LCD.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (17830 bytes):
-
-Writing | ################################################## | 100% 11.38s
-
-avrdude: 17830 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 17830 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 8.78s
-
-avrdude: verifying ...
-avrdude: 17830 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-13:56:02 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../LCD.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
-In file included from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../LCD.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (17830 bytes):
-
-Writing | ################################################## | 100% 11.45s
-
-avrdude: 17830 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 17830 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 8.79s
-
-avrdude: verifying ...
-avrdude: 17830 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-16:52:18 **** Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../LCD.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
-In file included from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../LCD.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (17830 bytes):
-
-Writing | ################################################## | 100% 11.54s
-
-avrdude: 17830 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 17830 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 8.78s
-
-avrdude: verifying ...
-avrdude: 17830 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:01:53 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../LCD.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
-In file included from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../LCD.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-17:06:18 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (17830 bytes):
-
-Writing | ################################################## | 100% 11.79s
-
-avrdude: 17830 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 17830 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 8.76s
-
-avrdude: verifying ...
-avrdude: 17830 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:09:12 **** Clean-only build of configuration Debug for project LCDone ****
+12:37:23 **** Clean-only build of configuration Debug for project Keypad ****
 make clean 
-rm -rf  LCDone.hex  ./DIO.o ./LCD_conig.o ./main.o  avrdudedummy  ./DIO.d ./LCD_conig.d ./main.d  LCDone.elf
+rm -rf  Keypad.hex  ./DIO.o ./Keypad.o ./LCD.o ./Main.o  avrdudedummy  ./DIO.d ./Keypad.d ./LCD.d ./Main.d  Keypad.elf
  
-17:09:13 **** Build of configuration Debug for project LCDone ****
+12:37:28 **** Build of configuration Debug for project Keypad ****
 make all 
 Building file: ../DIO.c
 Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
 Finished building: ../DIO.c
  
-Building file: ../LCD_conig.c
+Building file: ../Keypad.c
 Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LCD_conig.d" -MT"LCD_conig.o" -c -o "LCD_conig.o" "../LCD_conig.c"
-In file included from ../LCD_conig.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../LCD_conig.c:9:
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Keypad.d" -MT"Keypad.o" -c -o "Keypad.o" "../Keypad.c"
+In file included from ../Keypad.c:15:
 c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../LCD_conig.c
+Finished building: ../Keypad.c
  
-Building file: ../main.c
+Building file: ../LCD.c
 Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:8:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:8:
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
+In file included from ../LCD.c:11:
 c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../main.c:14: warning: return type of 'main' is not 'int'
-Finished building: ../main.c
+Finished building: ../LCD.c
  
-Building target: LCDone.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCDone.map -mmcu=atmega32 -o "LCDone.elf"  ./DIO.o ./LCD_conig.o ./main.o   
-Finished building target: LCDone.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCDone.elf  "LCDone.hex"
-Finished building: LCDone.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -Uflash:w:LCDone.hex:a
-
-avrdude: no programmer has been specified on the command line or the config file
-         Specify a programmer using the -c option and try again
-
-make: *** [avrdudedummy] Error 1
-17:09:24 **** Incremental Build of configuration Debug for project LCDone ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -Uflash:w:LCDone.hex:a
-
-avrdude: no programmer has been specified on the command line or the config file
-         Specify a programmer using the -c option and try again
-
-make: *** [avrdudedummy] Error 1
-17:09:33 **** Incremental Build of configuration Debug for project LCDone ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -Uflash:w:LCDone.hex:a
-
-avrdude: no programmer has been specified on the command line or the config file
-         Specify a programmer using the -c option and try again
-
-make: *** [avrdudedummy] Error 1
-17:09:55 **** Incremental Build of configuration Debug for project LCDone ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCDone.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.04s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCDone.hex"
-avrdude: input file LCDone.hex auto detected as Intel Hex
-avrdude: writing flash (6252 bytes):
-
-Writing | ################################################## | 100% 4.15s
-
-avrdude: 6252 bytes of flash written
-avrdude: verifying flash memory against LCDone.hex:
-avrdude: load data flash data from input file LCDone.hex:
-avrdude: input file LCDone.hex auto detected as Intel Hex
-avrdude: input file LCDone.hex contains 6252 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 3.05s
-
-avrdude: verifying ...
-avrdude: 6252 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:18:16 **** Incremental Build of configuration Debug for project LCDone ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCDone.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCDone.hex"
-avrdude: input file LCDone.hex auto detected as Intel Hex
-avrdude: writing flash (6252 bytes):
-
-Writing | ################################################## | 100% 4.15s
-
-avrdude: 6252 bytes of flash written
-avrdude: verifying flash memory against LCDone.hex:
-avrdude: load data flash data from input file LCDone.hex:
-avrdude: input file LCDone.hex auto detected as Intel Hex
-avrdude: input file LCDone.hex contains 6252 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 3.02s
-
-avrdude: verifying ...
-avrdude: 6252 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:18:45 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (17830 bytes):
-
-Writing | ################################################## | 100% 11.80s
-
-avrdude: 17830 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 17830 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 8.61s
-
-avrdude: verifying ...
-avrdude: 17830 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:24:27 **** Incremental Build of configuration Debug for project LCDone ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCDone.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.01s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCDone.hex"
-avrdude: input file LCDone.hex auto detected as Intel Hex
-avrdude: writing flash (6252 bytes):
-
-Writing | ################################################## | 100% 4.12s
-
-avrdude: 6252 bytes of flash written
-avrdude: verifying flash memory against LCDone.hex:
-avrdude: load data flash data from input file LCDone.hex:
-avrdude: input file LCDone.hex auto detected as Intel Hex
-avrdude: input file LCDone.hex contains 6252 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 3.02s
-
-avrdude: verifying ...
-avrdude: 6252 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:25:07 **** Incremental Build of configuration Debug for project LCDone ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCDone.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCDone.hex"
-avrdude: input file LCDone.hex auto detected as Intel Hex
-avrdude: writing flash (6252 bytes):
-
-Writing | ################################################## | 100% 4.21s
-
-avrdude: 6252 bytes of flash written
-avrdude: verifying flash memory against LCDone.hex:
-avrdude: load data flash data from input file LCDone.hex:
-avrdude: input file LCDone.hex auto detected as Intel Hex
-avrdude: input file LCDone.hex contains 6252 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 3.02s
-
-avrdude: verifying ...
-avrdude: 6252 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:25:21 **** Incremental Build of configuration Debug for project LCDone ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCDone.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCDone.hex"
-avrdude: input file LCDone.hex auto detected as Intel Hex
-avrdude: writing flash (6252 bytes):
-
-Writing | ################################################## | 100% 4.21s
-
-avrdude: 6252 bytes of flash written
-avrdude: verifying flash memory against LCDone.hex:
-avrdude: load data flash data from input file LCDone.hex:
-avrdude: input file LCDone.hex auto detected as Intel Hex
-avrdude: input file LCDone.hex contains 6252 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 3.02s
-
-avrdude: verifying ...
-avrdude: 6252 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:25:48 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
 Building file: ../Main.c
 Invoking: AVR Compiler
 avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
+In file included from ../Main.c:13:
 c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
 In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
+                 from ../Main.c:13:
 c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
 Finished building: ../Main.c
  
-Building target: LCD_Test.elf
+Building target: Keypad.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
+avr-gcc -Wl,-Map,Keypad.map -mmcu=atmega32 -o "Keypad.elf"  ./DIO.o ./Keypad.o ./LCD.o ./Main.o   
+Finished building target: Keypad.elf
  
 Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Keypad.elf  "Keypad.hex"
+Finished building: Keypad.hex
  
 Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (17830 bytes):
-
-Writing | ################################################## | 100% 12.09s
-
-avrdude: 17830 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 17830 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 8.61s
-
-avrdude: verifying ...
-avrdude: 17830 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:26:46 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../Main.c:125: warning: return type of 'main' is not 'int'
-../Main.c: In function 'main':
-../Main.c:127: warning: implicit declaration of function 'lcd_vidinint'
-../Main.c:129: warning: implicit declaration of function 'LCD_vidwrirteChar'
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-./Main.o: In function `main':
-../Main.c:127: undefined reference to `lcd_vidinint'
-../Main.c:129: undefined reference to `LCD_vidwrirteChar'
-../Main.c:130: undefined reference to `LCD_vidwrirteChar'
-../Main.c:131: undefined reference to `LCD_vidwrirteChar'
-make: *** [LCD_Test.elf] Error 1
-17:27:49 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../Main.c:125: warning: return type of 'main' is not 'int'
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (16306 bytes):
-
-Writing | ################################################## | 100% 11.04s
-
-avrdude: 16306 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 16306 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 7.88s
-
-avrdude: verifying ...
-avrdude: 16306 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:28:56 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../Main.c:125: warning: return type of 'main' is not 'int'
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (16318 bytes):
-
-Writing | ################################################## | 100% 11.06s
-
-avrdude: 16318 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 16318 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 7.87s
-
-avrdude: verifying ...
-avrdude: 16318 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:30:43 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../Main.c:125: warning: return type of 'main' is not 'int'
-../Main.c:132:24: warning: character constant too long for its type
-../Main.c: In function 'main':
-../Main.c:132: warning: large integer implicitly truncated to unsigned type
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (16324 bytes):
-
-Writing | ################################################## | 100% 11.05s
-
-avrdude: 16324 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 16324 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 7.88s
-
-avrdude: verifying ...
-avrdude: 16324 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:31:42 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../Main.c:125: warning: return type of 'main' is not 'int'
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (16336 bytes):
-
-Writing | ################################################## | 100% 11.08s
-
-avrdude: 16336 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 16336 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 7.88s
-
-avrdude: verifying ...
-avrdude: 16336 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:32:24 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../Main.c:125: warning: return type of 'main' is not 'int'
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (16356 bytes):
-
-Writing | ################################################## | 100% 11.07s
-
-avrdude: 16356 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 16356 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 7.89s
-
-avrdude: verifying ...
-avrdude: 16356 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:33:31 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../Main.c:125: warning: return type of 'main' is not 'int'
-../Main.c: In function 'main':
-../Main.c:137: error: too few arguments to function 'LCD_vidwriteString'
-../Main.c:138: error: too few arguments to function 'LCD_vidClear'
-make: *** [Main.o] Error 1
-17:33:51 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../Main.c:125: warning: return type of 'main' is not 'int'
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (16362 bytes):
-
-Writing | ################################################## | 100% 11.07s
-
-avrdude: 16362 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 16362 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 7.89s
-
-avrdude: verifying ...
-avrdude: 16362 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:34:20 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../Main.c:125: warning: return type of 'main' is not 'int'
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (16362 bytes):
-
-Writing | ################################################## | 100% 11.06s
-
-avrdude: 16362 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 16362 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 7.90s
-
-avrdude: verifying ...
-avrdude: 16362 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:34:59 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../Main.c:125: warning: return type of 'main' is not 'int'
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (16356 bytes):
-
-Writing | ################################################## | 100% 11.06s
-
-avrdude: 16356 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 16356 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 7.89s
-
-avrdude: verifying ...
-avrdude: 16356 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:36:08 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../Main.c: In function 'main':
-../Main.c:18: error: 'Init' undeclared (first use in this function)
-../Main.c:18: error: (Each undeclared identifier is reported only once
-../Main.c:18: error: for each function it appears in.)
-../Main.c:18: error: expected ';' before 'LCD'
-../Main.c:21: error: 'writ' undeclared (first use in this function)
-../Main.c:21: error: expected ';' before 'CGRAM'
-../Main.c:24: error: 'the' undeclared (first use in this function)
-../Main.c:24: error: expected ';' before 'draw'
-../Main.c:34: error: expected ';' before 'draw'
-../Main.c:45: error: expected ';' before 'draw'
-../Main.c:55: error: expected ';' before 'draw'
-../Main.c:74: error: 'print' undeclared (first use in this function)
-../Main.c:74: error: expected ';' before 'smail'
-../Main.c:76: error: expected ';' before 'i'
-../Main.c:78: error: stray '\331' in program
-../Main.c:78: error: stray '\204' in program
-../Main.c:79: error: expected ';' before 'LCD_vidwriteCharacter'
-../Main.c:80: error: stray '\330' in program
-../Main.c:80: error: stray '\271' in program
-../Main.c:81: error: expected ';' before 'LCD_vidwriteCharacter'
-../Main.c:83: error: 'write' undeclared (first use in this function)
-../Main.c:83: error: expected ';' before 'the'
-../Main.c:85: error: expected ';' before 'array'
-../Main.c:87: error: 'arr' undeclared (first use in this function)
-../Main.c:99: error: expected ';' before 'smail'
-../Main.c:101: error: expected ';' before 'i'
-../Main.c:103: error: stray '\331' in program
-../Main.c:103: error: stray '\204' in program
-../Main.c:104: error: expected ';' before 'LCD_vidwriteCharacter'
-../Main.c:105: error: stray '\330' in program
-../Main.c:105: error: stray '\271' in program
-../Main.c:106: error: expected ';' before 'LCD_vidwriteCharacter'
-../Main.c:108: error: expected ';' before 'the'
-../Main.c:110: error: expected ';' before 'array'
-make: *** [Main.o] Error 1
-17:36:20 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../Main.c: In function 'main':
-../Main.c:18: error: 'Init' undeclared (first use in this function)
-../Main.c:18: error: (Each undeclared identifier is reported only once
-../Main.c:18: error: for each function it appears in.)
-../Main.c:18: error: expected ';' before 'LCD'
-../Main.c:21: error: 'writ' undeclared (first use in this function)
-../Main.c:21: error: expected ';' before 'CGRAM'
-../Main.c:24: error: 'the' undeclared (first use in this function)
-../Main.c:24: error: expected ';' before 'draw'
-../Main.c:34: error: expected ';' before 'draw'
-../Main.c:45: error: expected ';' before 'draw'
-../Main.c:55: error: expected ';' before 'draw'
-../Main.c:74: error: 'print' undeclared (first use in this function)
-../Main.c:74: error: expected ';' before 'smail'
-../Main.c:76: error: expected ';' before 'i'
-../Main.c:78: error: stray '\331' in program
-../Main.c:78: error: stray '\204' in program
-../Main.c:79: error: expected ';' before 'LCD_vidwriteCharacter'
-../Main.c:80: error: stray '\330' in program
-../Main.c:80: error: stray '\271' in program
-../Main.c:81: error: expected ';' before 'LCD_vidwriteCharacter'
-../Main.c:83: error: 'write' undeclared (first use in this function)
-../Main.c:83: error: expected ';' before 'the'
-../Main.c:85: error: expected ';' before 'array'
-../Main.c:87: error: 'arr' undeclared (first use in this function)
-../Main.c:99: error: expected ';' before 'smail'
-../Main.c:101: error: expected ';' before 'i'
-../Main.c:103: error: stray '\331' in program
-../Main.c:103: error: stray '\204' in program
-../Main.c:104: error: expected ';' before 'LCD_vidwriteCharacter'
-../Main.c:105: error: stray '\330' in program
-../Main.c:105: error: stray '\271' in program
-../Main.c:106: error: expected ';' before 'LCD_vidwriteCharacter'
-../Main.c:108: error: expected ';' before 'the'
-../Main.c:110: error: expected ';' before 'array'
-make: *** [Main.o] Error 1
-17:38:05 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (17830 bytes):
-
-Writing | ################################################## | 100% 12.26s
-
-avrdude: 17830 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 17830 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 8.68s
-
-avrdude: verifying ...
-avrdude: 17830 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-17:48:56 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Keypad.hex:a
 avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
 make: *** [avrdudedummy] Error 1
-17:50:31 **** Incremental Build of configuration Debug for project LCD_Test ****
+12:49:13 **** Build of configuration Debug for project Keypad ****
 make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
 Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Keypad.hex:a
 avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
 make: *** [avrdudedummy] Error 1
-12:35:46 **** Incremental Build of configuration Debug for project LCD_Test ****
+12:49:14 **** Build of configuration Debug for project LCD_8bit ****
 make all 
-Building file: ../Main.c
+Building file: ../DIO.c
 Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../Main.c
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
  
-Building target: LCD_Test.elf
+Building file: ../LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
+In file included from ../LCD.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../LCD.c
+ 
+Building target: LCD_8bit.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
+avr-gcc -Wl,-Map,LCD_8bit.map -mmcu=atmega32 -o "LCD_8bit.elf"  ./DIO.o ./LCD.o ./Main.o   
+Finished building target: LCD_8bit.elf
  
 Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_8bit.elf  "LCD_8bit.hex"
+Finished building: LCD_8bit.hex
  
 Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_8bit.hex:a
 avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
 make: *** [avrdudedummy] Error 1
-12:36:24 **** Incremental Build of configuration Debug for project LCD_Test ****
+12:50:28 **** Incremental Build of configuration Debug for project LCD_8bit ****
 make all 
 Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.01s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (17884 bytes):
-
-Writing | ################################################## | 100% 11.61s
-
-avrdude: 17884 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 17884 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 8.68s
-
-avrdude: verifying ...
-avrdude: 17884 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_8bit.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+12:50:35 **** Incremental Build of configuration Debug for project LCD_8bit ****
+make all 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_8bit.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+14:13:18 **** Incremental Build of configuration Debug for project Keypad ****
+make all 
+Building file: ../Keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Keypad.d" -MT"Keypad.o" -c -o "Keypad.o" "../Keypad.c"
+In file included from ../Keypad.c:15:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Keypad.c
  
-14:27:20 **** Incremental Build of configuration Debug for project LCD_Test ****
+Building target: Keypad.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Keypad.map -mmcu=atmega32 -o "Keypad.elf"  ./DIO.o ./Keypad.o ./LCD.o ./Main.o   
+Finished building target: Keypad.elf
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Keypad.elf  "Keypad.hex"
+Finished building: Keypad.hex
+ 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Keypad.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+13:02:38 **** Build of configuration Debug for project Keypad ****
 make all 
 Building file: ../Main.c
 Invoking: AVR Compiler
 avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
+In file included from ../Main.c:13:
 c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
 Finished building: ../Main.c
  
-Building target: LCD_Test.elf
+Building target: Keypad.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
+avr-gcc -Wl,-Map,Keypad.map -mmcu=atmega32 -o "Keypad.elf"  ./DIO.o ./Keypad.o ./LCD.o ./Main.o   
+Finished building target: Keypad.elf
  
 Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Keypad.elf  "Keypad.hex"
+Finished building: Keypad.hex
  
 Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Keypad.hex:a
 
 avrdude: warning: cannot set sck period. please check for usbasp firmware update.
 avrdude: AVR device initialized and ready to accept instructions
@@ -1947,51 +144,48 @@ avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
          To disable this feature, specify the -D option.
 avrdude: erasing chip
 avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (17992 bytes):
+avrdude: reading input file "Keypad.hex"
+avrdude: input file Keypad.hex auto detected as Intel Hex
+avrdude: writing flash (17452 bytes):
 
-Writing | ################################################## | 100% 11.71s
+Writing | ################################################## | 100% 11.64s
 
-avrdude: 17992 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 17992 bytes
+avrdude: 17452 bytes of flash written
+avrdude: verifying flash memory against Keypad.hex:
+avrdude: load data flash data from input file Keypad.hex:
+avrdude: input file Keypad.hex auto detected as Intel Hex
+avrdude: input file Keypad.hex contains 17452 bytes
 avrdude: reading on-chip flash data:
 
-Reading | ################################################## | 100% 8.89s
+Reading | ################################################## | 100% 8.40s
 
 avrdude: verifying ...
-avrdude: 17992 bytes of flash verified
+avrdude: 17452 bytes of flash verified
 
 avrdude done.  Thank you.
 
 Finished building: avrdudedummy
  
-14:29:33 **** Incremental Build of configuration Debug for project LCD_Test ****
+13:42:12 **** Incremental Build of configuration Debug for project Keypad ****
 make all 
 Building file: ../Main.c
 Invoking: AVR Compiler
 avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
+In file included from ../Main.c:13:
 c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
 Finished building: ../Main.c
  
-Building target: LCD_Test.elf
+Building target: Keypad.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
+avr-gcc -Wl,-Map,Keypad.map -mmcu=atmega32 -o "Keypad.elf"  ./DIO.o ./Keypad.o ./LCD.o ./Main.o   
+Finished building target: Keypad.elf
  
 Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Keypad.elf  "Keypad.hex"
+Finished building: Keypad.hex
  
 Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Keypad.hex:a
 
 avrdude: warning: cannot set sck period. please check for usbasp firmware update.
 avrdude: AVR device initialized and ready to accept instructions
@@ -2003,51 +197,48 @@ avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
          To disable this feature, specify the -D option.
 avrdude: erasing chip
 avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (17992 bytes):
+avrdude: reading input file "Keypad.hex"
+avrdude: input file Keypad.hex auto detected as Intel Hex
+avrdude: writing flash (17452 bytes):
 
-Writing | ################################################## | 100% 11.63s
+Writing | ################################################## | 100% 11.72s
 
-avrdude: 17992 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 17992 bytes
+avrdude: 17452 bytes of flash written
+avrdude: verifying flash memory against Keypad.hex:
+avrdude: load data flash data from input file Keypad.hex:
+avrdude: input file Keypad.hex auto detected as Intel Hex
+avrdude: input file Keypad.hex contains 17452 bytes
 avrdude: reading on-chip flash data:
 
-Reading | ################################################## | 100% 8.84s
+Reading | ################################################## | 100% 8.40s
 
 avrdude: verifying ...
-avrdude: 17992 bytes of flash verified
+avrdude: 17452 bytes of flash verified
 
 avrdude done.  Thank you.
 
 Finished building: avrdudedummy
  
-14:30:25 **** Incremental Build of configuration Debug for project LCD_Test ****
+15:39:08 **** Incremental Build of configuration Debug for project Keypad ****
 make all 
 Building file: ../Main.c
 Invoking: AVR Compiler
 avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
+In file included from ../Main.c:13:
 c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
 Finished building: ../Main.c
  
-Building target: LCD_Test.elf
+Building target: Keypad.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
+avr-gcc -Wl,-Map,Keypad.map -mmcu=atmega32 -o "Keypad.elf"  ./DIO.o ./Keypad.o ./LCD.o ./Main.o   
+Finished building target: Keypad.elf
  
 Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Keypad.elf  "Keypad.hex"
+Finished building: Keypad.hex
  
 Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Keypad.hex:a
 
 avrdude: warning: cannot set sck period. please check for usbasp firmware update.
 avrdude: AVR device initialized and ready to accept instructions
@@ -2059,79 +250,23 @@ avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
          To disable this feature, specify the -D option.
 avrdude: erasing chip
 avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (17992 bytes):
+avrdude: reading input file "Keypad.hex"
+avrdude: input file Keypad.hex auto detected as Intel Hex
+avrdude: writing flash (17552 bytes):
 
-Writing | ################################################## | 100% 11.67s
+Writing | ################################################## | 100% 11.51s
 
-avrdude: 17992 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 17992 bytes
+avrdude: 17552 bytes of flash written
+avrdude: verifying flash memory against Keypad.hex:
+avrdude: load data flash data from input file Keypad.hex:
+avrdude: input file Keypad.hex auto detected as Intel Hex
+avrdude: input file Keypad.hex contains 17552 bytes
 avrdude: reading on-chip flash data:
 
-Reading | ################################################## | 100% 8.79s
+Reading | ################################################## | 100% 8.66s
 
 avrdude: verifying ...
-avrdude: 17992 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-14:35:11 **** Incremental Build of configuration Debug for project LCD_Test ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:9:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../Main.c
- 
-Building target: LCD_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_Test.map -mmcu=atmega32 -o "LCD_Test.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_Test.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_Test.elf  "LCD_Test.hex"
-Finished building: LCD_Test.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_Test.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "LCD_Test.hex"
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: writing flash (18010 bytes):
-
-Writing | ################################################## | 100% 11.70s
-
-avrdude: 18010 bytes of flash written
-avrdude: verifying flash memory against LCD_Test.hex:
-avrdude: load data flash data from input file LCD_Test.hex:
-avrdude: input file LCD_Test.hex auto detected as Intel Hex
-avrdude: input file LCD_Test.hex contains 18010 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 8.83s
-
-avrdude: verifying ...
-avrdude: 18010 bytes of flash verified
+avrdude: 17552 bytes of flash verified
 
 avrdude done.  Thank you.
 

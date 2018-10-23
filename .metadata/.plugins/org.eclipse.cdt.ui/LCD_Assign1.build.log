@@ -1,0 +1,20 @@
+20:30:45 **** Incremental Build of configuration Debug for project LCD_Assign1 ****
+make all 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm16 -cusbasp -Uflash:w:LCD_Assign1.hex:a
+
+avrdude: warning: cannot set sck period. please check for usbasp firmware update.
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e9502
+avrdude: Expected signature for ATMEGA16 is 1E 94 03
+         Double check chip, or use -F to override this check.
+
+avrdude done.  Thank you.
+
+make: *** [avrdudedummy] Error 1
+
+20:30:46 Build Finished (took 684ms)
+

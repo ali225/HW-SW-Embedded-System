@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:LCD_8bit.elf,org.eclipse.launchbar.core.descriptorType.default\:test.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:LCD_8bit.elf/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:LCD_8bit.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:test.exe/activeLaunchMode=run

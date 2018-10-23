@@ -1,0 +1,39 @@
+/*
+ ============================================================================
+ Name        : test.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	int number;
+	int reminder;
+	int  temp = 1;
+	printf("print enter number : ");
+	scanf("%d",&number);
+
+	if (number == 0)
+		printf("0 \n");
+
+	while (number != 0) {
+		 reminder = number % 10;
+		 printf("reminder :%d \n",reminder);
+		 number = number / 10;
+		 printf("number : %d \n",number);
+		 temp = temp * 10 + reminder;
+		 printf("temp : %d\n",temp);
+	}
+	while (temp != 1) {
+	    reminder = temp % 10;
+		temp = temp / 10;
+		reminder = reminder+0;
+		printf("%d",reminder); // 0 -> = 48 ASCI
+	}
+}
