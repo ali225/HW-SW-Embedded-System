@@ -9,6 +9,7 @@
 1539639358682	Delete resource 'LCD_Test/DIO.c'
 1539639742903	Delete resource 'LCD'
 1539705063786	Delete resource 'LCDone'
+<<<<<<< HEAD
 1539966167277	Delete resource 'LCD_Test'
 1539966439960	Delete 7 resources
 1539970315037	Delete resource 'LCD_Assign1/Main.c'
@@ -16,3 +17,5 @@
 1539972993524	Delete resource 'LCD_Assign1/LCD.h'
 1539973014165	Delete 2 resources
 1539974142556	Delete resource 'LCD_Assign1'
+=======
+>>>>>>> c05163c39d4e8ca240623594b0ed3470d3ab32e4
