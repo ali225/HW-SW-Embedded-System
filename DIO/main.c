@@ -5,7 +5,8 @@
  *      Author: Eng Ali Gamal
  */
 
-#include <avr/delay.h>
+#include <avr/io.h>          /* Defines pins, ports, etc */
+#include <util/delay.h>		/* Functions to waste time */
 #include "Types.h"
 #include "Macros.h"
 #include "REGISTERS.h"
@@ -15,7 +16,7 @@
 /*int main(void)
  {
 
-
+// --------Inits --------//
  while(1)
  {
  DIO_VidSetPinDirection(3,1,1);
@@ -40,13 +41,16 @@
 
 int main(void) {
 	uint8_t i;
-	DDRD = 0xff;
+	// --------Inits --------//
+	DDRD = 0xff;    //Data Direction Register D : writing a one to the bit enables output
+
+	// ------ Event Loop ------ //
 
 	while (1) {
 		for (i = 7; i > 0; i--) {
 
 			PORTD = (1 << i);
-			_delay_ms(1000);
+			_delay_ms(1000); // wait
 
 		}
 
