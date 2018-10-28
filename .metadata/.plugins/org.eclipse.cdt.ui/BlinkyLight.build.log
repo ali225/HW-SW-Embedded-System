@@ -1,4 +1,4 @@
-01:30:39 **** Incremental Build of configuration Release for project BlinkyLight ****
+13:45:01 **** Build of configuration Release for project BlinkyLight ****
 make all 
 Building file: ../main.c
 Invoking: AVR Compiler
@@ -16,39 +16,8 @@ Finished building: BlinkyLight.hex
  
 Invoking: AVRDude
 C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:BlinkyLight.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
 
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "BlinkyLight.hex"
-avrdude: input file BlinkyLight.hex auto detected as Intel Hex
-avrdude: writing flash (206 bytes):
-
-Writing | ################################################## | 100% 0.14s
-
-avrdude: 206 bytes of flash written
-avrdude: verifying flash memory against BlinkyLight.hex:
-avrdude: load data flash data from input file BlinkyLight.hex:
-avrdude: input file BlinkyLight.hex auto detected as Intel Hex
-avrdude: input file BlinkyLight.hex contains 206 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 0.10s
-
-avrdude: verifying ...
-avrdude: 206 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-
-01:30:41 Build Finished (took 2s.744ms)
+13:45:06 Build Finished (took 4s.925ms)
 

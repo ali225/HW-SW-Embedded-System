@@ -1,138 +1,32 @@
-12:37:23 **** Clean-only build of configuration Debug for project Keypad ****
+13:17:04 **** Clean-only build of configuration Debug for project Servo_motor_PWM ****
 make clean 
-rm -rf  Keypad.hex  ./DIO.o ./Keypad.o ./LCD.o ./Main.o  avrdudedummy  ./DIO.d ./Keypad.d ./LCD.d ./Main.d  Keypad.elf
+rm -rf  Servo_motor_PWM.hex  ./DIO.o ./Main.o  avrdudedummy  ./DIO.d ./Main.d  Servo_motor_PWM.elf
  
-12:37:28 **** Build of configuration Debug for project Keypad ****
+13:17:09 **** Build of configuration Debug for project Servo_motor_PWM ****
 make all 
 Building file: ../DIO.c
 Invoking: AVR Compiler
 avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
 Finished building: ../DIO.c
  
-Building file: ../Keypad.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Keypad.d" -MT"Keypad.o" -c -o "Keypad.o" "../Keypad.c"
-In file included from ../Keypad.c:15:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../Keypad.c
- 
-Building file: ../LCD.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
-In file included from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../LCD.c
- 
 Building file: ../Main.c
 Invoking: AVR Compiler
 avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:13:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../Main.c:13:
+In file included from ../Main.c:12:
 c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
 Finished building: ../Main.c
  
-Building target: Keypad.elf
+Building target: Servo_motor_PWM.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Keypad.map -mmcu=atmega32 -o "Keypad.elf"  ./DIO.o ./Keypad.o ./LCD.o ./Main.o   
-Finished building target: Keypad.elf
+avr-gcc -Wl,-Map,Servo_motor_PWM.map -mmcu=atmega32 -o "Servo_motor_PWM.elf"  ./DIO.o ./Main.o   
+Finished building target: Servo_motor_PWM.elf
  
 Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Keypad.elf  "Keypad.hex"
-Finished building: Keypad.hex
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Servo_motor_PWM.elf  "Servo_motor_PWM.hex"
+Finished building: Servo_motor_PWM.hex
  
 Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Keypad.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-12:49:13 **** Build of configuration Debug for project Keypad ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Keypad.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-12:49:14 **** Build of configuration Debug for project LCD_8bit ****
-make all 
-Building file: ../DIO.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
-Finished building: ../DIO.c
- 
-Building file: ../LCD.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
-In file included from ../LCD.c:11:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../LCD.c
- 
-Building target: LCD_8bit.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,LCD_8bit.map -mmcu=atmega32 -o "LCD_8bit.elf"  ./DIO.o ./LCD.o ./Main.o   
-Finished building target: LCD_8bit.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_8bit.elf  "LCD_8bit.hex"
-Finished building: LCD_8bit.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_8bit.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-12:50:28 **** Incremental Build of configuration Debug for project LCD_8bit ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_8bit.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-12:50:35 **** Incremental Build of configuration Debug for project LCD_8bit ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:LCD_8bit.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-14:13:18 **** Incremental Build of configuration Debug for project Keypad ****
-make all 
-Building file: ../Keypad.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Keypad.d" -MT"Keypad.o" -c -o "Keypad.o" "../Keypad.c"
-In file included from ../Keypad.c:15:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../Keypad.c
- 
-Building target: Keypad.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Keypad.map -mmcu=atmega32 -o "Keypad.elf"  ./DIO.o ./Keypad.o ./LCD.o ./Main.o   
-Finished building target: Keypad.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Keypad.elf  "Keypad.hex"
-Finished building: Keypad.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Keypad.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-13:02:38 **** Build of configuration Debug for project Keypad ****
-make all 
-Building file: ../Main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:13:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../Main.c
- 
-Building target: Keypad.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Keypad.map -mmcu=atmega32 -o "Keypad.elf"  ./DIO.o ./Keypad.o ./LCD.o ./Main.o   
-Finished building target: Keypad.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Keypad.elf  "Keypad.hex"
-Finished building: Keypad.hex
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Keypad.hex:a
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Servo_motor_PWM.hex:a
 
 avrdude: warning: cannot set sck period. please check for usbasp firmware update.
 avrdude: AVR device initialized and ready to accept instructions
@@ -144,48 +38,48 @@ avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
          To disable this feature, specify the -D option.
 avrdude: erasing chip
 avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "Keypad.hex"
-avrdude: input file Keypad.hex auto detected as Intel Hex
-avrdude: writing flash (17452 bytes):
+avrdude: reading input file "Servo_motor_PWM.hex"
+avrdude: input file Servo_motor_PWM.hex auto detected as Intel Hex
+avrdude: writing flash (5070 bytes):
 
-Writing | ################################################## | 100% 11.64s
+Writing | ################################################## | 100% 3.40s
 
-avrdude: 17452 bytes of flash written
-avrdude: verifying flash memory against Keypad.hex:
-avrdude: load data flash data from input file Keypad.hex:
-avrdude: input file Keypad.hex auto detected as Intel Hex
-avrdude: input file Keypad.hex contains 17452 bytes
+avrdude: 5070 bytes of flash written
+avrdude: verifying flash memory against Servo_motor_PWM.hex:
+avrdude: load data flash data from input file Servo_motor_PWM.hex:
+avrdude: input file Servo_motor_PWM.hex auto detected as Intel Hex
+avrdude: input file Servo_motor_PWM.hex contains 5070 bytes
 avrdude: reading on-chip flash data:
 
-Reading | ################################################## | 100% 8.40s
+Reading | ################################################## | 100% 2.50s
 
 avrdude: verifying ...
-avrdude: 17452 bytes of flash verified
+avrdude: 5070 bytes of flash verified
 
 avrdude done.  Thank you.
 
 Finished building: avrdudedummy
  
-13:42:12 **** Incremental Build of configuration Debug for project Keypad ****
+13:18:00 **** Incremental Build of configuration Debug for project Servo_motor_PWM ****
 make all 
 Building file: ../Main.c
 Invoking: AVR Compiler
 avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:13:
+In file included from ../Main.c:12:
 c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
 Finished building: ../Main.c
  
-Building target: Keypad.elf
+Building target: Servo_motor_PWM.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Keypad.map -mmcu=atmega32 -o "Keypad.elf"  ./DIO.o ./Keypad.o ./LCD.o ./Main.o   
-Finished building target: Keypad.elf
+avr-gcc -Wl,-Map,Servo_motor_PWM.map -mmcu=atmega32 -o "Servo_motor_PWM.elf"  ./DIO.o ./Main.o   
+Finished building target: Servo_motor_PWM.elf
  
 Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Keypad.elf  "Keypad.hex"
-Finished building: Keypad.hex
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Servo_motor_PWM.elf  "Servo_motor_PWM.hex"
+Finished building: Servo_motor_PWM.hex
  
 Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Keypad.hex:a
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Servo_motor_PWM.hex:a
 
 avrdude: warning: cannot set sck period. please check for usbasp firmware update.
 avrdude: AVR device initialized and ready to accept instructions
@@ -197,78 +91,45 @@ avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
          To disable this feature, specify the -D option.
 avrdude: erasing chip
 avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "Keypad.hex"
-avrdude: input file Keypad.hex auto detected as Intel Hex
-avrdude: writing flash (17452 bytes):
+avrdude: reading input file "Servo_motor_PWM.hex"
+avrdude: input file Servo_motor_PWM.hex auto detected as Intel Hex
+avrdude: writing flash (7482 bytes):
 
-Writing | ################################################## | 100% 11.72s
+Writing | ################################################## | 100% 5.04s
 
-avrdude: 17452 bytes of flash written
-avrdude: verifying flash memory against Keypad.hex:
-avrdude: load data flash data from input file Keypad.hex:
-avrdude: input file Keypad.hex auto detected as Intel Hex
-avrdude: input file Keypad.hex contains 17452 bytes
+avrdude: 7482 bytes of flash written
+avrdude: verifying flash memory against Servo_motor_PWM.hex:
+avrdude: load data flash data from input file Servo_motor_PWM.hex:
+avrdude: input file Servo_motor_PWM.hex auto detected as Intel Hex
+avrdude: input file Servo_motor_PWM.hex contains 7482 bytes
 avrdude: reading on-chip flash data:
 
-Reading | ################################################## | 100% 8.40s
+Reading | ################################################## | 100% 3.69s
 
 avrdude: verifying ...
-avrdude: 17452 bytes of flash verified
+avrdude: 7482 bytes of flash verified
 
 avrdude done.  Thank you.
 
 Finished building: avrdudedummy
  
-15:39:08 **** Incremental Build of configuration Debug for project Keypad ****
+13:45:01 **** Build of configuration Release for project BlinkyLight ****
 make all 
-Building file: ../Main.c
+Building file: ../main.c
 Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:13:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../Main.c
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
  
-Building target: Keypad.elf
+Building target: BlinkyLight.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Keypad.map -mmcu=atmega32 -o "Keypad.elf"  ./DIO.o ./Keypad.o ./LCD.o ./Main.o   
-Finished building target: Keypad.elf
+avr-gcc -Wl,-Map,BlinkyLight.map -mmcu=atmega32 -o "BlinkyLight.elf"  ./main.o   
+Finished building target: BlinkyLight.elf
  
 Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Keypad.elf  "Keypad.hex"
-Finished building: Keypad.hex
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex BlinkyLight.elf  "BlinkyLight.hex"
+Finished building: BlinkyLight.hex
  
 Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Keypad.hex:a
-
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "Keypad.hex"
-avrdude: input file Keypad.hex auto detected as Intel Hex
-avrdude: writing flash (17552 bytes):
-
-Writing | ################################################## | 100% 11.51s
-
-avrdude: 17552 bytes of flash written
-avrdude: verifying flash memory against Keypad.hex:
-avrdude: load data flash data from input file Keypad.hex:
-avrdude: input file Keypad.hex auto detected as Intel Hex
-avrdude: input file Keypad.hex contains 17552 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 8.66s
-
-avrdude: verifying ...
-avrdude: 17552 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:BlinkyLight.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
