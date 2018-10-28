@@ -4,58 +4,51 @@
  *  Created on: Oct 7, 2018
  *      Author: Eng Ali Gamal
  */
-#include <avr/io.h>
-#include <util/delay.h>
+#include <avr/io.h>          /* Defines pins, ports, etc */
+#include <util/delay.h>		/* Functions to waste time */
 #define F_CPU 12000000UL
 
+int main(void) {
 
+	// --------Inits --------//
 
-int main(void)
-{
-	DDRD = 0b11111111; // set out put DDRD
+	DDRD = 0b11111111; /*Data Direction Register D : writing a one to the bit enables output */
 
-	while(1)
-	{
-		PORTD = 0b11111111; // Led on
-		_delay_ms(500); 	// delay
-		PORTD = 0b00000000;	// led off
-		_delay_ms(500);
-		PORTD = 0b11111111;
-		_delay_ms(500);
-		PORTD = 0b010000000;
-		_delay_ms(500);
-		PORTD = 0b11111111;
-		_delay_ms(500);
-
+	// ------ Event Loop ------ //
+	while (1) {
+		PORTD = 0b11111111; 	/* Turn on all led in port D */
+		_delay_ms(500); 		/* wait */
+		PORTD = 0b00000000; 	/*Turn off all Led in port D  */
+		_delay_ms(500); 		/*wait */
 
 	}
 	return 0;
 }
 
 /*int main(void)
-{
-	DDRD = 0b00000011; // set Led to output
+ {
+ DDRD = 0b00000011; // Data Direction Register D : writing a one to the bit enables output
 
-	while(1)
-	{
-		PORTD =	0b00000011; //LED on
-		_delay_ms(100);
-		PORTD = 0b00000000;
-		_delay_ms(100);		// LED off
-	}
-	return 0;
-}*/
+ while(1)
+ {
+ PORTD =	0b00000011; //Turn on Two led pin/bit in port D
+ _delay_ms(100);		//wait
+ PORTD = 0b00000000;	// Turn off all led in port D
+ _delay_ms(100);		//wait
+ }
+ return 0;
+ }*/
 
 /*int main(void)
-{
-	DDRD |= 1<<PD1; // set PB6 to output
+ {
+ DDRD |= 1<<PD1; // set PB6 to output
 
-	while (1)
-	{
-		PORTD &= ~(1<<PD1); // LED on
-		_delay_ms(1000);
-		PORTD |= 1<<PD1; // LED off
-		_delay_ms(1000);
-	}
-	return 0;
-}*/
+ while (1)
+ {
+ PORTD &= ~(1<<PD1);  //Turn on all led pin/bit in port D
+ _delay_ms(1000);	  //wait
+ PORTD |= 1<<PD1;     //Turn off all led in port D
+ _delay_ms(1000);	  //wait
+ }
+ return 0;
+ }*/
