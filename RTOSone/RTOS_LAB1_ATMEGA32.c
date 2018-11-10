@@ -1,0 +1,60 @@
+/*
+ * RTOS_LAB1.c
+ *
+ *  Created on: Nov 7, 2018
+ *      Author: Eng Ali Gamal
+ */
+
+#include <avr/io.h>
+#include "FreeRTOS.h"
+#include "task.h"
+#include "FreeRTOSConfig.h"
+#include "lcd_4bit.h"
+#include <util/delay.h>
+
+/* Define Tasks Priorities */
+#define  TASK1_PRIORITY (3)
+#define  TASK2_PRIORITY (2)
+
+/*tasks codes prototypes */
+void task1_code(void*pvParamter);
+void task2_code(void*pvParamter);
+
+int main(void) {
+
+	/*initialize LCD*/
+	lcd_init();
+
+	/*Creat tasks*/
+	xTaskCreate(task1_code, NULL, 85, NULL, TASK1_PRIORITY, NULL);
+	xTaskCreate(task2_code, NULL, configMINIMAL_STACK_SIZE, NULL,
+			TASK2_PRIORITY, NULL);
+
+	/*start Scheduler */
+	vTaskStartScheduler();
+
+	return 0;
+
+}
+
+/*Task1 Code */
+void task1_code(void*pvParamter) {
+
+	for (;;) {
+		lcd_clrScreen();
+		lcd_dispString("I am Task 1");
+		_delay_ms(10000);
+		vTaskDelay(2000);
+	}
+
+}
+
+/*Task 2 Code*/
+void task2_code(void*pvParamter) {
+	while (1) {
+		lcd_clrScreen();
+		lcd_dispString("I am Task 2");
+		//_delay_ms(10000);
+		vTaskDelay(2000);
+	}
+}
