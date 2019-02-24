@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\eclips_workspace\software_stack_round8"/>
 		<item value="D:\embedded system\Embedded Ali Gamal\HW - SW Embedded System"/>
 		<item value="D:\embedded system\Embedded Ali Gamal\HW - SW Embedded System\LCD_Test_8bit"/>
 		<item value="D:\embedded system\HW - SW\MyFirst"/>
 		<item value="D:\embedded system\HW - SW\LCDone"/>
 		<item value="D:\embedded system\HW - SW\LCd"/>
 	</list>
+	<section name="NewWizardAction">
+	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
 		<item value="false" key="FilterByLocation"/>
 		<item value="true" key="ShowStatusLine"/>
@@ -20,5 +23,12 @@
 			<item value="671" key="DIALOG_X_ORIGIN"/>
 			<item value="188" key="DIALOG_Y_ORIGIN"/>
 		</section>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item value="875" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="711" key="DIALOG_HEIGHT"/>
+		<item value="-102" key="DIALOG_X_ORIGIN"/>
+		<item value="-25" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

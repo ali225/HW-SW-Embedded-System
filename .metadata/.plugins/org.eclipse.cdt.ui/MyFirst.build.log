@@ -1,6 +1,6 @@
-14:08:58 **** Incremental Build of configuration Default for project MyFirst ****
+15:44:40 **** Build of configuration Default for project MyFirst ****
 make all 
 make: *** No rule to make target `all'.  Stop.
 
-14:08:58 Build Finished (took 542ms)
+15:44:45 Build Finished (took 4s.483ms)
 

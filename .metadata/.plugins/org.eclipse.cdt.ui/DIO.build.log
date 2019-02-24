@@ -1,4 +1,4 @@
-22:32:42 **** Incremental Build of configuration Release for project DIO ****
+16:32:09 **** Build of configuration Release for project DIO ****
 make all 
 Building file: ../DIO.c
 Invoking: AVR Compiler
@@ -12,8 +12,311 @@ Finished building: ../DIO.c
 Building file: ../main.c
 Invoking: AVR Compiler
 avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:8:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from ../main.c:12:
+../REGISTERS.h:11:1: warning: "DDRA" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:99:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:12:1: warning: "PORTA" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:13:1: warning: "PINA" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:98:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:15:1: warning: "DDRB" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:94:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:16:1: warning: "PORTB" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:17:1: warning: "PINB" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:93:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:19:1: warning: "DDRC" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:89:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:20:1: warning: "PORTC" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:21:1: warning: "PINC" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:88:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:23:1: warning: "DDRD" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:84:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:24:1: warning: "PORTD" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:25:1: warning: "PIND" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:83:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:28:1: warning: "SREG" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:410,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/common.h:103:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:29:1: warning: "SPH" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:410,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/common.h:92:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:30:1: warning: "SPL" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:410,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/common.h:81:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:31:1: warning: "OCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:165:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:32:1: warning: "GICR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:163:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:33:1: warning: "GIFR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:161:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:34:1: warning: "TIMSK" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:159:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:35:1: warning: "TIFR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:158:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:36:1: warning: "SPMCR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:156:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:37:1: warning: "TWCR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:154:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:38:1: warning: "MCUCR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:152:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:39:1: warning: "MCUCSR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:151:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:40:1: warning: "TCCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:148:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:41:1: warning: "TCNT0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:147:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:42:1: warning: "OSCCAL" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:143:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:43:1: warning: "SFIOR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:141:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:44:1: warning: "TCCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:139:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:45:1: warning: "TCCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:138:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:46:1: warning: "TCNT1H" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:137:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:47:1: warning: "TCNT1L" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:136:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:48:1: warning: "OCR1AH" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:134:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:49:1: warning: "OCR1AL" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:133:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:50:1: warning: "OCR1BH" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:131:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:51:1: warning: "OCR1BL" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:130:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:52:1: warning: "ICR1" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:126:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:53:1: warning: "TCCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:123:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:54:1: warning: "TCNT2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:122:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:55:1: warning: "OCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:121:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:56:1: warning: "ASSR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:118:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:57:1: warning: "WDTCR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:116:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:58:1: warning: "UBRRH" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:113:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:59:1: warning: "EEARH" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:111:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:60:1: warning: "EEARL" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:110:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:61:1: warning: "SPDR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:80:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:62:1: warning: "SPSR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:79:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:63:1: warning: "SPCR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:78:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:64:1: warning: "UDR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:75:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:65:1: warning: "UCSRA" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:74:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:66:1: warning: "UCSRB" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:73:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:67:1: warning: "UBRRL" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:72:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:68:1: warning: "ACSR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:69:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:69:1: warning: "ADMUX" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:66:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:70:1: warning: "ADCSRA" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:65:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:71:1: warning: "ADCH" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:64:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:72:1: warning: "ADCL" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:63:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:73:1: warning: "TWDR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:56:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:74:1: warning: "TWAR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:55:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:75:1: warning: "TWSR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:54:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../REGISTERS.h:76:1: warning: "TWBR" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:206,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom32.h:53:1: warning: this is the location of the previous definition
 Finished building: ../main.c
  
 Building target: DIO.elf
@@ -27,8 +330,39 @@ Finished building: DIO.hex
  
 Invoking: AVRDude
 C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:DIO.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
 
-22:32:43 Build Finished (took 684ms)
+avrdude: warning: cannot set sck period. please check for usbasp firmware update.
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e9502
+avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: warning: cannot set sck period. please check for usbasp firmware update.
+avrdude: reading input file "DIO.hex"
+avrdude: input file DIO.hex auto detected as Intel Hex
+avrdude: writing flash (848 bytes):
+
+Writing | ################################################## | 100% 0.55s
+
+avrdude: 848 bytes of flash written
+avrdude: verifying flash memory against DIO.hex:
+avrdude: load data flash data from input file DIO.hex:
+avrdude: input file DIO.hex auto detected as Intel Hex
+avrdude: input file DIO.hex contains 848 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.45s
+
+avrdude: verifying ...
+avrdude: 848 bytes of flash verified
+
+avrdude done.  Thank you.
+
+Finished building: avrdudedummy
+ 
+
+16:32:14 Build Finished (took 4s.740ms)
 
