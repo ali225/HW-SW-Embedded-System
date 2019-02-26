@@ -14,6 +14,9 @@
 #include "Keypad_Cfg.h"
 #define F_CPU 12000000UL
 
+//Keypad Information funcation 
+
+
 void Keypad_vidInit(void) {
 	// input the Row keypad
 	DIO_VidSetPinDirection(Keypad_Port, R0, 0);
