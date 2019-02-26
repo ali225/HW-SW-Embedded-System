@@ -9,7 +9,7 @@
 #include <avr/io.h>         // Defines pins, ports, etc
 #include <util/delay.h>		// Functions to waste time
 #include "TYPES.h"			// Types data
-#include "MACROS.h"			// Function Macros set and clear and togel
+#include "MACROS.h"			// Function Macros set and clear and togeal
 #include "REGISTERS.h"	  	// Defines Registers
 #include "DIO/DIO.h"		// Functions to Input and output
 #define F_CPU 12000000UL
