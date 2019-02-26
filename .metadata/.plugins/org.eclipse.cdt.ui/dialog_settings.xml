@@ -37,6 +37,15 @@
 		</list>
 	</section>
 	<section name="RenameInformationPopup">
+		<item value="2" key="snap_position"/>
+	</section>
+	<section name="CRenameRefactoringInputPage">
+		<item value="3" key="scope"/>
+		<item value="false" key="preprocessor"/>
+		<item value="" key="workingset"/>
+		<item value="false" key="references_inv"/>
+		<item value="false" key="comment"/>
+		<item value="false" key="exhausiveFileSearch"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>

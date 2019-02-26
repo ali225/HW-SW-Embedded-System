@@ -8,8 +8,8 @@
 #ifndef KEYPAD_KEYPAD_CFG_H_
 #define KEYPAD_KEYPAD_CFG_H_
 
-//Keypad Information
-#define Keypad_Port 2
+//Keypad Information the port 3 of 'D'
+#define Keypad_Port 3
 
 #define R0 0
 #define R1 1

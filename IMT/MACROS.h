@@ -17,10 +17,10 @@
 
 #define LOW_NIBBLE(lVar,var) lVar= (var<<4)        // lVar will hold the value of low nibble of var
 
-//#define CLR_BIT(var, bit) var &= (~(1<<bit))
+#define CLR_BIT(var, bit) var &= (~(1<<bit))
 
-//#define SET_BIT(var, bit) var |= (1<<bit)
+#define SET_BIT(var, bit) var |= (1<<bit)
 
-//#define TOG_BIT(var, bit) var ^= (1<<bit)
+#define TOG_BIT(var, bit) var ^= (1<<bit)
 
 #endif /* MACROS_H_ */

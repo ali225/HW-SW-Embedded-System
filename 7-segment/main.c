@@ -104,25 +104,26 @@ int main(void) {
  // counter display seven segment from 0 to 9
  while (1) {
 
- PORTD = 0b00000100; // Number 0
+
+ PORTD = 0b00100000;  // Number 0
  _delay_ms(1000);
- PORTD = 0b01000000; // Number 9
+ PORTD = 0b10010000; // Number 9
  _delay_ms(1000);
  PORTD = 0b00000000; // Number 8
  _delay_ms(1000);
- PORTD = 0b11100100; // Number 7
+ PORTD = 0b11111000; // Number 7
  _delay_ms(1000);
- PORTD = 0b00001000; // Number 6
+ PORTD = 0b10000010; // Number 6
  _delay_ms(1000);
- PORTD = 0b01001000; // Number 5
+ PORTD = 0b10010010; // Number 5
  _delay_ms(1000);
- PORTD = 0b11010000; // Number 4
+ PORTD = 0b10011001; // Number 4
  _delay_ms(1000);
- PORTD = 0b01100000; // Number 3
+ PORTD = 0b01010000; // Number 3
  _delay_ms(1000);
- PORTD = 0b00100010; // Number 2
+ PORTD = 0b01000100; // Number 2
  _delay_ms(1000);
- PORTD = 0b11110100; // Number 1
+ PORTD = 0b11111001; // Number 1
  _delay_ms(1000);
 
  }
