@@ -1,0 +1,26 @@
+12:48:57 **** Incremental Build of configuration Debug for project SPI ****
+make all 
+Building file: ../SPI.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"SPI.d" -MT"SPI.o" -c -o "SPI.o" "../SPI.c"
+In file included from ../SPI.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../SPI.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../SPI.c: In function 'SPI_vidSlaveInit':
+../SPI.c:40: warning: implicit declaration of function 'DIO_VidSetPinDirection'
+Finished building: ../SPI.c
+ 
+Building target: SPI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI.map -mmcu=atmega32 -o "SPI.elf"  ./DIO.o ./LCD.o ./Main.o ./SPI.o   
+./SPI.o: In function `SPI_vidMasterInit':
+../SPI.c:19: undefined reference to `DIO_VidSetPinDirection'
+../SPI.c:20: undefined reference to `DIO_VidSetPinDirection'
+../SPI.c:23: undefined reference to `DIO_VidSetPinDirection'
+../SPI.c:24: undefined reference to `DIO_VidSetPinDirection'
+make: *** [SPI.elf] Error 1
+
+12:48:59 Build Finished (took 1s.263ms)
+

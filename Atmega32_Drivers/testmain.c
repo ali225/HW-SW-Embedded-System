@@ -1,5 +1,6 @@
-
 /*
+
+
 
  * main.c
  *
@@ -12,7 +13,7 @@
 #define input 0
 
 int main ()
-{
+ {
 	GPIO_voidInit();
 	GPIO_u8_WritePinDir(5,output,'D') ;
 	int toggle_led = 1;
@@ -25,6 +26,7 @@ int main ()
 
 	return 0 ;
 }
-
-
 */
+
+
+

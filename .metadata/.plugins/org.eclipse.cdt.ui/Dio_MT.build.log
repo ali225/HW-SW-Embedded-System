@@ -1,0 +1,6 @@
+18:37:14 **** Incremental Build of configuration Default for project Dio_MT ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+18:37:18 Build Finished (took 3s.300ms)
+

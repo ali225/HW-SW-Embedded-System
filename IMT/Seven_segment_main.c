@@ -146,3 +146,137 @@
 
 
 */
+// counter nine seven segment
+/*
+int main(void)
+{
+	u8 Seven_Segment[10]={0b10100000,0b11111001,0b11000100,0b11010000,0b10011001,0b10010010,
+	0b10000010,0b11111000,0b10000000,0b10010000};
+
+	DIO_VidSetPortDirection(0,255);
+
+	DIO_VidSetPinDirection(2,0,1);  //  Left Seven Segment
+    DIO_VidSetPinDirection(2,1,1);  // Right Seven Segment
+
+    DIO_VidSetPinValue(2,0,0);  //  Left Seven Segment Disabled
+    DIO_VidSetPinValue(2,1,0);  // Right Seven Segment Disabled
+
+    while(1)
+    {
+    	for(int i=0; i<6; i++)
+    	{
+			for(int j=0;j<10;j++)
+			{
+				for (int k=0; k<40;k++)
+				{
+					DIO_VidSetPinValue(2,0,1);  //  Left Seven Segment Enabled
+					DIO_VidSetPinValue(2,1,0);  // Right Seven Segment Disabled
+					DIO_VidSetPortValue(0,Seven_Segment[i]);
+					_delay_ms(5);
+
+					DIO_VidSetPinValue(2,0,0);  //  Left Seven Segment Disabled
+					DIO_VidSetPinValue(2,1,1);  // Right Seven Segment Enabled
+					DIO_VidSetPortValue(0,Seven_Segment[j]);
+					_delay_ms(5);
+				}
+
+			}
+
+    	}
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+	return -1;
+}
+*/
+
+// TrafficLights
+/*
+int main(void)
+{
+	u8 Seven_Segment[10]={0b10100000,0b11111001,0b11000100,0b11010000,0b10011001,0b10010010,
+	0b10000010,0b11111000,0b10000000,0b10010000};
+
+	DIO_VidSetPortDirection(0,255);  // Left Seven Segment
+	DIO_VidSetPortDirection(1,255);  // Right Seven Segment
+
+	DIO_VidSetPinDirection(2,0,1);  //Red
+	DIO_VidSetPinDirection(2,1,1);  //Yellow
+	DIO_VidSetPinDirection(2,2,1);  //Green
+
+	DIO_VidSetPinValue(2,0,0);  //Red
+	DIO_VidSetPinValue(2,1,0);  //Yellow
+	DIO_VidSetPinValue(2,2,0);  //Green
+
+
+	while(1)
+	{
+		DIO_VidSetPinValue(2,0,1);  //Red
+		DIO_VidSetPinValue(2,2,0);  //Green
+		DIO_VidSetPortValue(0,0b10000010); // Left Seven Segment=6
+		DIO_VidSetPortValue(1,0b10100000); // Right Seven Segment=0
+		_delay_ms(500);
+
+		for(int i=0;i<6;i++)
+		{
+			DIO_VidSetPortValue(0,Seven_Segment[5-i]); // Left Seven Segment
+			for(int j=0;j<10;j++)
+						{
+							DIO_VidSetPortValue(1,Seven_Segment[9-j]); // Right Seven Segment
+							_delay_ms(500);
+						}
+		}
+
+		DIO_VidSetPinValue(2,0,0);  //Red
+		DIO_VidSetPinValue(2,1,1);  //Yellow
+		DIO_VidSetPortValue(0,0b11111001); // Left Seven Segment=1
+		DIO_VidSetPortValue(1,0b10100000); // Right Seven Segment=0
+		_delay_ms(500);
+
+		DIO_VidSetPortValue(0,0b10100000); // Left Seven Segment=0
+
+		for(int j=0;j<10;j++)
+					{
+						DIO_VidSetPortValue(1,Seven_Segment[9-j]); // Right Seven Segment
+						_delay_ms(500);
+					}
+
+		DIO_VidSetPinValue(2,1,0);  //Yellow
+		DIO_VidSetPinValue(2,2,1);  //Green
+		DIO_VidSetPortValue(0,0b10000010); // Left Seven Segment=6
+		DIO_VidSetPortValue(1,0b10100000); // Right Seven Segment=0
+		_delay_ms(500);
+
+		for(int i=0;i<6;i++)
+				{
+					DIO_VidSetPortValue(0,Seven_Segment[5-i]); // Left Seven Segment
+					for(int j=0;j<10;j++)
+								{
+									DIO_VidSetPortValue(1,Seven_Segment[9-j]); // Right Seven Segment
+									_delay_ms(500);
+								}
+				}
+
+
+
+	}
+
+
+
+
+
+	return 1;
+}
+*/
+
+

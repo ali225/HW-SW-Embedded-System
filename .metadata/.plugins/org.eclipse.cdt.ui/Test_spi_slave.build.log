@@ -1,0 +1,7 @@
+15:27:54 **** Clean-only build of configuration Debug for project Test_spi_slave ****
+make clean 
+rm -rf  Test_spi_slave.hex  ./slave_main.o  avrdudedummy  ./slave_main.d  Test_spi_slave.elf
+ 
+
+15:27:57 Build Finished (took 2s.835ms)
+

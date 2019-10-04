@@ -1,0 +1,36 @@
+/*
+ * DIO.c
+ *
+ *  Created on: Oct 2, 2019
+ *      Author: Eng Ali Gamal
+ */
+
+#include "LIB/bit_math.h"
+#include "LIB/std_types.h"
+#include "LIB/registers.h"
+#include "DIO.h"
+
+stdReturn_t DIO_init(portX_t PortName, pinX_t PinNume, pinDir_t direction) {
+	switch (PortName) {
+	case PORT_A:
+		if(INPUT == direction)
+		{
+			CLR_BIT(PORT_A,PinNume);
+		}
+		else if (OUTPUT == direction)
+		{
+			SET_BIT(PORT_A,PinNume);
+		}
+		else
+		{
+
+		}
+		;break;
+	case PORT_B:;break;
+	case PORT_C:;break;
+	case PORT_D:;break;
+	default:break;
+
+	}
+
+}

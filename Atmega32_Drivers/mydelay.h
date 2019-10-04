@@ -28,6 +28,4 @@ u32 DelayCount;
 
 
 
-
-
 #endif /* MYDELAY_H_ */

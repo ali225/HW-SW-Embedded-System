@@ -1,0 +1,23 @@
+20:00:52 **** Incremental Build of configuration Debug for project i2c_Slave ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: i2c_Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,i2c_Slave.map -mmcu=atmega32 -o "i2c_Slave.elf"  ./main.o   
+Finished building target: i2c_Slave.elf
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex i2c_Slave.elf  "i2c_Slave.hex"
+Finished building: i2c_Slave.hex
+ 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:i2c_Slave.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+
+20:00:53 Build Finished (took 1s.527ms)
+

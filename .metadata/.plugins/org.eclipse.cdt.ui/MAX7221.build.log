@@ -1,0 +1,9 @@
+21:10:51 **** Incremental Build of configuration Debug for project MAX7221 ****
+make all 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:MAX7221.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+
+21:10:51 Build Finished (took 523ms)
+

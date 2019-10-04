@@ -8,7 +8,17 @@
 		<item value="D:\embedded system\HW - SW\LCDone"/>
 		<item value="D:\embedded system\HW - SW\LCd"/>
 	</list>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item value="D:\Embedded System MTC\Embedded cod Driver\DIO_Driver" key="OUTSIDE_LOCATION"/>
+	</section>
 	<section name="NewWizardAction">
+		<item value="org.eclipse.cdt.ui.wizards.NewCWizard2" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.cdt.ui.newCWizards"/>
+		</list>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
 		<item value="false" key="FilterByLocation"/>

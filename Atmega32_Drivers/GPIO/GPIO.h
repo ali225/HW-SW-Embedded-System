@@ -9,7 +9,6 @@
 #ifndef GPIO_GPIO_H_
 #define GPIO_GPIO_H_
 
-
 #include "../Data_Types.h"
 
 

@@ -1,0 +1,74 @@
+21:49:42 **** Build of configuration Debug for project Atmega32_Drivers ****
+make all 
+Building file: ../keypadmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"keypadmain.d" -MT"keypadmain.o" -c -o "keypadmain.o" "../keypadmain.c"
+In file included from ../keypadmain.c:9:
+../GPIO/GPIO.h:15:1: warning: "myPORTA" redefined
+In file included from ../keypadmain.c:8:
+../Atmega32_registers.h:50:1: warning: this is the location of the previous definition
+In file included from ../keypadmain.c:9:
+../GPIO/GPIO.h:16:1: warning: "myDDRA" redefined
+In file included from ../keypadmain.c:8:
+../Atmega32_registers.h:51:1: warning: this is the location of the previous definition
+In file included from ../keypadmain.c:9:
+../GPIO/GPIO.h:17:1: warning: "myPINA" redefined
+In file included from ../keypadmain.c:8:
+../Atmega32_registers.h:52:1: warning: this is the location of the previous definition
+In file included from ../keypadmain.c:9:
+../GPIO/GPIO.h:18:1: warning: "myPORTB" redefined
+In file included from ../keypadmain.c:8:
+../Atmega32_registers.h:53:1: warning: this is the location of the previous definition
+In file included from ../keypadmain.c:9:
+../GPIO/GPIO.h:19:1: warning: "myDDRB" redefined
+In file included from ../keypadmain.c:8:
+../Atmega32_registers.h:54:1: warning: this is the location of the previous definition
+In file included from ../keypadmain.c:9:
+../GPIO/GPIO.h:20:1: warning: "myPINB" redefined
+In file included from ../keypadmain.c:8:
+../Atmega32_registers.h:55:1: warning: this is the location of the previous definition
+In file included from ../keypadmain.c:9:
+../GPIO/GPIO.h:21:1: warning: "myPORTC" redefined
+In file included from ../keypadmain.c:8:
+../Atmega32_registers.h:56:1: warning: this is the location of the previous definition
+In file included from ../keypadmain.c:9:
+../GPIO/GPIO.h:22:1: warning: "myDDRC" redefined
+In file included from ../keypadmain.c:8:
+../Atmega32_registers.h:57:1: warning: this is the location of the previous definition
+In file included from ../keypadmain.c:9:
+../GPIO/GPIO.h:23:1: warning: "myPINC" redefined
+In file included from ../keypadmain.c:8:
+../Atmega32_registers.h:58:1: warning: this is the location of the previous definition
+In file included from ../keypadmain.c:9:
+../GPIO/GPIO.h:24:1: warning: "myPORTD" redefined
+In file included from ../keypadmain.c:8:
+../Atmega32_registers.h:59:1: warning: this is the location of the previous definition
+In file included from ../keypadmain.c:9:
+../GPIO/GPIO.h:25:1: warning: "myDDRD" redefined
+In file included from ../keypadmain.c:8:
+../Atmega32_registers.h:60:1: warning: this is the location of the previous definition
+In file included from ../keypadmain.c:9:
+../GPIO/GPIO.h:26:1: warning: "myPIND" redefined
+In file included from ../keypadmain.c:8:
+../Atmega32_registers.h:61:1: warning: this is the location of the previous definition
+In file included from ../LCD/lcd.h:13,
+                 from ../keypadmain.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../keypadmain.c
+ 
+Building target: Atmega32_Drivers.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Atmega32_Drivers.map -mmcu=atmega32 -o "Atmega32_Drivers.elf"  ./keypad/keypad.o  ./UART/USART.o  ./Timer/timer.o  ./SPI/SPI.o  ./LCD/lcd.o  ./GPIO/GPIO.o  ./ADC/ADC.o  ./LCDmain.o ./firstmain.o ./intruptmain.o ./keypadmain.o ./servomotormain.o ./sevemmain.o ./testmain.o   
+Finished building target: Atmega32_Drivers.elf
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Atmega32_Drivers.elf  "Atmega32_Drivers.hex"
+Finished building: Atmega32_Drivers.hex
+ 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Atmega32_Drivers.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+
+21:49:48 Build Finished (took 6s.194ms)
+

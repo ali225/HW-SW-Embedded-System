@@ -1,0 +1,25 @@
+15:28:51 **** Build of configuration Debug for project UART ****
+make all 
+Building file: ../UART.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"UART.d" -MT"UART.o" -c -o "UART.o" "../UART.c"
+In file included from ../UART.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../UART.c
+ 
+Building target: UART.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART.map -mmcu=atmega32 -o "UART.elf"  ./DIO.o ./LCD.o ./Main.o ./UART.o   
+Finished building target: UART.elf
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex UART.elf  "UART.hex"
+Finished building: UART.hex
+ 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:UART.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+
+15:28:58 Build Finished (took 6s.959ms)
+

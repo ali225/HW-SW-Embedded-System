@@ -1,0 +1,295 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 29, 2019
+ *      Author: Eng Ali Gamal
+ */
+#include <stdio.h>
+
+//Function prototype
+//Compiler aid check for "type checking"
+//unsigned long Calc_Area(unsigned long s); // says calac area
+// main function
+/*int fourthBit(int num)
+ {
+ return((num &0x00000008)>>3);
+ }*/
+int main(void) {
+
+	char x =200, y =200;
+	int z;
+	z = x * y;
+	printf("%d \nsizeof =  %d \n sizeof char = %c",z, sizeof(z), sizeof(x));
+
+	/*int x = 5 , y = 7 ;
+	float z ;
+	z = (float )x / y;
+    printf("%f",z);*/
+	/*unsigned char x = 128;
+
+	printf("x = %d , hex = %x\n", x, x);
+	x = 128 + 1;
+	printf("x = %d , hex = %x", x, x);
+*/
+	/*char x = 0;
+
+	 for( ; x<=202; x++)
+	 {
+	 printf("%d\n",x);
+	 }*/
+	/*// define int number
+	 int number, i;
+	 get the value
+	 printf("Enter an number : ");
+	 fflush(stdout);
+	 scanf("%d", &number);
+
+	 for (i =0;i<=20;i++)
+	 {
+	 printf("%d X %d = %d\n", i , number, i *number);
+	 }*/
+	/*// define int number
+	 int number;
+	 //define int Factorial
+	 int   Factorial = 1;
+
+	 get the value
+	 printf("Enter an intege : ");
+	 fflush(stdout);
+	 scanf("%d", &number);
+
+	 loop
+	 do {
+	 Factorial *= number--;
+
+	 } while (number > 0);
+	 printf("Factorial %d ", Factorial);
+	 */
+	/*
+	 int x;
+	 printf("Enter pleas numper : ");
+	 fflush(stdout);
+	 scanf("%d", &x);
+	 while (x >= 0) {
+	 // if ((x%2)==0)
+	 if (!(x & 1)) {
+	 printf("%d\n", x);
+	 }
+	 x--;
+
+	 }
+
+	 */
+	/*	int x = 3 , y = 2;
+	 float z;
+	 z = (float)x / 2;
+	 printf("the divid = %f", z);*/
+
+	/*int i = 17;  // defain and declation value to int
+	 char c = 'c';
+	 int sum;
+	 sum = i + c;
+
+	 printf("the sum = %d",sum);*/
+	/*int x, y, z;
+	 int temp;
+	 printf("Enter the three number : ");
+	 fflush(stdout);
+	 scanf("%d%d%d", &x, &y, &z);
+	 printf("the all time of cod that : ");
+
+	 if (x < y && x < z) {
+	 temp = x;
+	 printf("the min x = %d", temp);
+	 } else if (y < x && y < z) {
+	 temp = y;
+	 printf("the min y = %d", temp);
+	 } else if (z < x && z < y) {
+	 temp = z;
+	 printf("the mine z = %d", temp);
+	 } else {
+	 return temp;
+	 }
+	 return 0;*/
+	/*int ID;
+	 int pass;
+	 int math, pyh, cod;
+	 Ask the user to enter his ID
+	 printf("Plese Enter Your ID: ");
+	 fflush(stdout);
+	 scanf("%d", &ID);
+
+	 switch (ID) {
+	 case 12:
+	 printf("Enter password");
+	 fflush(stdout);
+	 scanf("%d", &pass);
+	 if (pass == 1234) {
+	 printf("Welcome Ahmed\n");
+	 math = 10;
+	 pyh = 20;
+	 cod = 30;
+	 printf("the math =%d \nthe pyh = %d\nthe cod = %d", math, pyh, cod);
+	 } else {
+	 printf("the passward not ");
+	 }
+	 break;
+	 case 20:
+	 printf("Enter password");
+	 fflush(stdout);
+	 scanf("%d", &pass);
+	 if (pass == 4537) {
+	 printf("Welcome Mohab\n");
+	 math = 40;
+	 pyh = 50;
+	 cod = 60;
+	 printf("the math =%d \nthe pyh = %d\nthe cod = %d", math, pyh, cod);
+	 } else {
+	 printf("the passward not ");
+
+	 }
+	 break;
+	 case 34:
+	 printf("Enter password");
+	 fflush(stdout);
+	 scanf("%d", &pass);
+	 if (pass == 2452) {
+	 printf("Welcome Salma");
+	 math = 40;
+	 pyh = 50;
+	 cod = 60;
+	 printf("the math =%d \nthe pyh = %d\nthe cod = %d", math, pyh, cod);
+	 } else {
+	 printf("the passward not ");
+
+	 }
+	 break;
+	 default:
+	 printf("Wrong ID");
+	 break;
+	 }*/
+	/*
+
+	 int x;
+
+	 printf("pleas enter number mark \n");
+	 fflush(stdout);
+	 scanf("%d", &x);
+
+	 if (x >= 90 && x <= 100) {
+	 printf("the grade number =  A");
+	 } else if (x >= 80 && x <= 90) {
+	 printf("the grade number =  b");
+	 } else if (x >= 65 && x <= 80) {
+	 printf("the grade number =  c");
+	 } else if (x >= 50 && x <= 65) {
+	 printf("the grade number =  D");
+	 } else if (x >= 0 && x <= 50) {
+	 printf("the grade number =  F");
+	 } else {
+	 printf("no that number ");
+	 }
+	 */
+
+	/*int x, y, z, f;
+	 int i = 0;
+	 printf("pleas enter four number \n");
+	 fflush(stdout);
+	 scanf("%d%d%d%d", &x, &y, &z, &f);
+
+	 if (x == 3)
+	 i++;
+	 if (y == 7)
+	 i++;
+	 if (z == 8)
+	 i++;
+	 if (f == 9)
+	 i++;
+
+	 printf("the programg true counter %d",i);*/
+	/*int x, y;c
+	 printf("pleas enter two number \n");
+	 fflush(stdout);
+	 scanf("%d%d", &x ,&y);
+
+	 (x<y)?printf("%d",x):printf("%d",y);*/
+
+//printf("test one condtion = %d",z );
+}
+
+/*	int a;
+ a = fourthBit(23);
+ printf("the %d",a);
+ }*/
+/*
+ unsigned long sida; // room wall meters
+ unsigned long area; // size squared meters
+
+ printf("this program calaulates areas of squars-shpes ");
+ fflush(stdout);
+ sida = 3; // 3 meters
+ area = Calc_Area(sida);
+ printf("\nArea of the room with side of %ld m is %ld sqrm\n", sida, area);
+ }*/
+
+// Calculates area
+// Input : sid of a room(unsigned long )
+// Output : area of the room (unsigned long)
+/*unsigned long Calc_Area(unsigned long s) {
+ unsigned long result;
+
+ result = s * s;
+ return (result);
+
+ }*/
+/*unsigned int x = 5;
+ unsigned int y = 9;
+
+ x=(--x)+(y++);
+ printf("x = %d\n",x);
+ y=(x--)*(--y);
+ printf("y = %d\n",y);
+ x =(x++)-(y++);
+ printf("y = %d\n",x);
+
+
+ */
+/*
+ int Orange ;
+ int Apple ;
+ int Bannana;
+ int total;
+
+ printf("pleas enter how many need  orange or apple or Bannana\n");
+ fflush(stdout);
+ scanf("%d%d%d", &Orange, &Apple, &Bannana);
+
+ printf("the Total  orange = %d\napple =%d\nBannana =%d\n",Orange*2,Apple*3,Bannana*5);
+ fflush(stdout);
+ total = ((Orange*2)+(Apple*3) + (Bannana*5));
+ printf("the total receipt =%d ",total);*/
+
+/*int d, m, y;
+ float w, h;
+
+ printf("pleas enter day and month and year\n");
+ fflush(stdout);
+ scanf("%d%d%d", &d ,&m, &y);
+
+ printf("Enter the wigth and height \n");
+ fflush(stdout);
+ scanf("%f%f",&w,&h);
+
+ printf("the bithday day= %d\nmonsth = %d\nyear = %d\n", d, m, y);
+ printf("the weight= %f\nheight=%f\n", w, h);
+
+ *//*int a = 10;
+ int b = 20;
+ int c = 30;
+
+ printf("the on number  %d\n", a);
+ printf("the two number %d\n", b);
+ printf("the three number %d\n", c);
+ */
+// print this line cod one
+// end the main function

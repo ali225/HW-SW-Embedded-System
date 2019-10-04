@@ -1,0 +1,17 @@
+/*
+ * main.c
+ *
+ *  Created on: Jun 9, 2019
+ *      Author: Eng Ali Gamal
+ */
+
+#include <stdio.h>
+
+int main()
+{
+	int i;
+	for(i = 0; i < 10; i++){
+	printf("Hello world c \n ");
+
+	}
+}

@@ -1,0 +1,56 @@
+13:18:00 **** Incremental Build of configuration Debug for project Servo_motor_PWM ****
+make all 
+Building file: ../Main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
+In file included from ../Main.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main.c
+ 
+Building target: Servo_motor_PWM.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Servo_motor_PWM.map -mmcu=atmega32 -o "Servo_motor_PWM.elf"  ./DIO.o ./Main.o   
+Finished building target: Servo_motor_PWM.elf
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Servo_motor_PWM.elf  "Servo_motor_PWM.hex"
+Finished building: Servo_motor_PWM.hex
+ 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Servo_motor_PWM.hex:a
+
+avrdude: warning: cannot set sck period. please check for usbasp firmware update.
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e9502
+avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: warning: cannot set sck period. please check for usbasp firmware update.
+avrdude: reading input file "Servo_motor_PWM.hex"
+avrdude: input file Servo_motor_PWM.hex auto detected as Intel Hex
+avrdude: writing flash (7482 bytes):
+
+Writing | ################################################## | 100% 5.04s
+
+avrdude: 7482 bytes of flash written
+avrdude: verifying flash memory against Servo_motor_PWM.hex:
+avrdude: load data flash data from input file Servo_motor_PWM.hex:
+avrdude: input file Servo_motor_PWM.hex auto detected as Intel Hex
+avrdude: input file Servo_motor_PWM.hex contains 7482 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 3.69s
+
+avrdude: verifying ...
+avrdude: 7482 bytes of flash verified
+
+avrdude done.  Thank you.
+
+Finished building: avrdudedummy
+ 
+
+13:18:09 Build Finished (took 9s.630ms)
+

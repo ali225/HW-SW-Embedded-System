@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Atmega32_Drivers/DPIO&apos; to &apos;GPIO&apos;" description="Rename resource &apos;DPIO&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="DPIO" name="GPIO" stamp="1544623024429" updateReferences="true"/>
+</session>

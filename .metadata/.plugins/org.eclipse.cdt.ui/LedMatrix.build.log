@@ -1,0 +1,42 @@
+10:16:45 **** Incremental Build of configuration Debug for project LedMatrix ****
+make all 
+Building file: ../atmega32_MCAL/atmega32_IO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"atmega32_MCAL/atmega32_IO.d" -MT"atmega32_MCAL/atmega32_IO.o" -c -o "atmega32_MCAL/atmega32_IO.o" "../atmega32_MCAL/atmega32_IO.c"
+In file included from ../atmega32_MCAL/atmega32_IO.c:9:
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortDir'
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:33: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PinDir'
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:42: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortRangeDir'
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:53: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortDirManage'
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:68: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortWrite'
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:76: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PinWrite'
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:84: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortRangeWrite'
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:95: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortWriteManage'
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:109: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortRead'
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:117: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PinRead'
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:125: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortRangeRead'
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:135: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortReadManage'
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:150: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortToggle'
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:157: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PinToggle'
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:164: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortRangeToggle'
+../atmega32_MCAL/../atmega32_MCAL/atmega32_IO.h:171: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortToggleManage'
+../atmega32_MCAL/atmega32_IO.c:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortDir'
+../atmega32_MCAL/atmega32_IO.c:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PinDir'
+../atmega32_MCAL/atmega32_IO.c:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortRangeDir'
+../atmega32_MCAL/atmega32_IO.c:66: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortDirManage'
+../atmega32_MCAL/atmega32_IO.c:92: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortWrite'
+../atmega32_MCAL/atmega32_IO.c:104: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PinWrite'
+../atmega32_MCAL/atmega32_IO.c:118: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortRangeWrite'
+../atmega32_MCAL/atmega32_IO.c:142: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortWriteManage'
+../atmega32_MCAL/atmega32_IO.c:168: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortRead'
+../atmega32_MCAL/atmega32_IO.c:180: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PinRead'
+../atmega32_MCAL/atmega32_IO.c:189: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortRangeRead'
+../atmega32_MCAL/atmega32_IO.c:210: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortReadManage'
+../atmega32_MCAL/atmega32_IO.c:233: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortToggle'
+../atmega32_MCAL/atmega32_IO.c:245: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PinToggle'
+../atmega32_MCAL/atmega32_IO.c:254: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortRangeToggle'
+../atmega32_MCAL/atmega32_IO.c:273: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IO_PortToggleManage'
+make: *** [atmega32_MCAL/atmega32_IO.o] Error 1
+
+10:16:46 Build Finished (took 1s.171ms)
+

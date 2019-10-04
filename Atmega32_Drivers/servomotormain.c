@@ -1,9 +1,10 @@
 /*
+
  * servomotormain.c
  *
  *  Created on: Dec 21, 2018
  *      Author: Eng Ali Gamal
- */
+
 
 
 #include <avr/io.h>
@@ -12,7 +13,7 @@
 
 #define F_CPU 8000000UL // needed by <util/deley.h>
 
-int main (void)
+/* main (void)
 {
 	DDRC = 0x01;
 	PORTC = 0x00;
@@ -43,3 +44,4 @@ int main (void)
 	}
 
 }
+*/

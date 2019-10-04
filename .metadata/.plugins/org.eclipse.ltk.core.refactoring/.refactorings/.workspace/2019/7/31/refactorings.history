@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;C progarm MTC&apos;" deleteContents="false" description="Delete resource &apos;C progarm MTC&apos;" element1="/C progarm MTC" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1564430279110"/>
+</session>

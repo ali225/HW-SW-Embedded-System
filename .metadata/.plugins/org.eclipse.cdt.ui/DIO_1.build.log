@@ -1,0 +1,23 @@
+21:48:52 **** Incremental Build of configuration Debug for project DIO_1 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: DIO_1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_1.map -mmcu=atmega32 -o "DIO_1.elf"  ./main.o   
+Finished building target: DIO_1.elf
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_1.elf  "DIO_1.hex"
+Finished building: DIO_1.hex
+ 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:DIO_1.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+
+21:48:54 Build Finished (took 1s.179ms)
+

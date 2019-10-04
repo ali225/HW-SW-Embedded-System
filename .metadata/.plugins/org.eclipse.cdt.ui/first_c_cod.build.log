@@ -1,0 +1,8 @@
+16:00:44 **** Incremental Build of configuration Debug for project first_c_cod ****
+Info: Internal Builder is used for build
+gcc -o first_c_cod.exe main.o 
+D:/embedded system/IMT Tools/ToolChains/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file first_c_cod.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+16:00:44 Build Finished (took 475ms)
+

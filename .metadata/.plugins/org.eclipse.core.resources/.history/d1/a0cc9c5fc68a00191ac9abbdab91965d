@@ -1,0 +1,34 @@
+/*
+ * main.c
+ *
+ *  Created on: Jun 9, 2019
+ *      Author: Eng Ali Gamal
+ */
+
+#include <stdio.h>
+#include <string.h>
+
+void tryToModify (int x , char text[])
+{
+	x++;
+	text[0]--;
+}
+
+int main()
+{
+	int v = 5;
+	char name[5] ="Good";
+	printf("v = %d , name = %s\r\n", v , name);
+	tryToModify(v , name);
+	printf("v = %d, name = %s\r\n", v, name);
+}
+/*
+int main()
+{
+	int i;
+	for(i=0;i<10;i++){
+	printf("%d :Hello world c\r \n ", i);
+
+	}
+}
+*/

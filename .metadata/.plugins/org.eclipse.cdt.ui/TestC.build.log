@@ -1,0 +1,17 @@
+13:45:09 **** Rebuild of configuration Debug for project TestC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TestC.o" "..\\src\\TestC.c" 
+..\src\TestC.c: In function 'main':
+..\src\TestC.c:21:25: warning: passing argument 1 of 'Liner_Sarch_Array' makes integer from pointer without a cast [-Wint-conversion]
+      Liner_Sarch_Array( array , 6 , 5);
+                         ^~~~~
+..\src\TestC.c:14:5: note: expected 'int' but argument is of type 'int *'
+ int Liner_Sarch_Array(int array , int array_size , int elemant);
+     ^~~~~~~~~~~~~~~~~
+..\src\TestC.c: In function 'Line_Sarch_Array':
+..\src\TestC.c:31:12: error: subscripted value is neither array nor pointer nor vector
+   if (array[i] == element)     /*check this number how many that*/
+            ^
+
+13:45:09 Build Finished (took 221ms)
+

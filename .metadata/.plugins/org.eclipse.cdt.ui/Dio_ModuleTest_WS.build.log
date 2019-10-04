@@ -1,0 +1,6 @@
+18:39:36 **** Build of configuration Default for project Dio_ModuleTest_WS ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+18:39:36 Build Finished (took 228ms)
+

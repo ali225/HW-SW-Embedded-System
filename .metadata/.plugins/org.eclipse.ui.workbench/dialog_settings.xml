@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="328" key="DIALOG_X_ORIGIN"/>
-		<item value="21" key="DIALOG_Y_ORIGIN"/>
+		<item value="931" key="DIALOG_X_ORIGIN"/>
+		<item value="9" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.preferences.keysPreferencePage">
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="-1" key="dialogHeight"/>
-		<item value="-1" key="dialogWidth"/>
+		<item value="250" key="dialogHeight"/>
+		<item value="350" key="dialogWidth"/>
 		<list key="textEntries">
+			<item value="1"/>
 		</list>
 		<list key="orderedElements">
+			<item value="org.eclipse.cdt.debug.application.command.debugRemoteExecutable"/>
 		</list>
 		<list key="orderedProviders">
+			<item value="org.eclipse.ui.commands"/>
 		</list>
 		<list key="textArray">
+			<item value="dar"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">
@@ -39,6 +43,11 @@
 		</list>
 	</section>
 	<section name="ImportExportAction">
+		<item value="org.eclipse.cdt.ui.wizards.MakeProjFromExisting" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.cdt.ui.importWizardCategory"/>
+		</list>
 	</section>
 	<section name="FileExtensionDialogSettings">
 		<item value="875" key="DIALOG_WIDTH"/>

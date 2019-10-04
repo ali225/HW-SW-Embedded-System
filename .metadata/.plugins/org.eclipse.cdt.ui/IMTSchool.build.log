@@ -1,0 +1,10 @@
+16:40:33 **** Clean-only build of configuration Debug for project IMTSchool ****
+make clean 
+rm -rf  IMTSchool.hex  ./DIO&GPIO/DIO.o  ./main.o  avrdudedummy  ./DIO&GPIO/DIO.d  ./main.d  IMTSchool.elf
+/usr/bin/sh: GPIO/DIO.o: No such file or directory
+/usr/bin/sh: GPIO/DIO.d: No such file or directory
+make: [clean] Error 127 (ignored)
+ 
+
+16:40:33 Build Finished (took 570ms)
+

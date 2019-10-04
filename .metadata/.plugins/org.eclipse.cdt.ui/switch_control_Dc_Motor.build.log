@@ -1,0 +1,56 @@
+20:46:23 **** Incremental Build of configuration Debug for project switch_control_Dc_Motor ****
+make all 
+Building file: ../Main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
+In file included from ../Main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main.c
+ 
+Building target: switch_control_Dc_Motor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,switch_control_Dc_Motor.map -mmcu=atmega32 -o "switch_control_Dc_Motor.elf"  ./DIO.o ./Main.o   
+Finished building target: switch_control_Dc_Motor.elf
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex switch_control_Dc_Motor.elf  "switch_control_Dc_Motor.hex"
+Finished building: switch_control_Dc_Motor.hex
+ 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:switch_control_Dc_Motor.hex:a
+
+avrdude: warning: cannot set sck period. please check for usbasp firmware update.
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e9502
+avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: warning: cannot set sck period. please check for usbasp firmware update.
+avrdude: reading input file "switch_control_Dc_Motor.hex"
+avrdude: input file switch_control_Dc_Motor.hex auto detected as Intel Hex
+avrdude: writing flash (5262 bytes):
+
+Writing | ################################################## | 100% 3.44s
+
+avrdude: 5262 bytes of flash written
+avrdude: verifying flash memory against switch_control_Dc_Motor.hex:
+avrdude: load data flash data from input file switch_control_Dc_Motor.hex:
+avrdude: input file switch_control_Dc_Motor.hex auto detected as Intel Hex
+avrdude: input file switch_control_Dc_Motor.hex contains 5262 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 2.61s
+
+avrdude: verifying ...
+avrdude: 5262 bytes of flash verified
+
+avrdude done.  Thank you.
+
+Finished building: avrdudedummy
+ 
+
+20:46:34 Build Finished (took 10s.832ms)
+

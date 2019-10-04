@@ -1,0 +1,9 @@
+20:13:22 **** Incremental Build of configuration Debug for project Dio_First_project ****
+make all 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+
+20:13:23 Build Finished (took 798ms)
+

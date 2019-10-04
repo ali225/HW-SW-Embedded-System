@@ -1,0 +1,9 @@
+16:00:34 **** Incremental Build of configuration Debug for project RTOSone ****
+make all 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:RTOSone.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+
+16:00:36 Build Finished (took 1s.837ms)
+
