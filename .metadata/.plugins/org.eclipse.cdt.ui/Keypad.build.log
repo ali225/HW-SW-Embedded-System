@@ -1,11 +1,11 @@
-15:39:08 **** Incremental Build of configuration Debug for project Keypad ****
+20:26:32 **** Incremental Build of configuration Debug for project Keypad ****
 make all 
-Building file: ../Main.c
+Building file: ../Keypad.c
 Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Main.d" -MT"Main.o" -c -o "Main.o" "../Main.c"
-In file included from ../Main.c:13:
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Keypad.d" -MT"Keypad.o" -c -o "Keypad.o" "../Keypad.c"
+In file included from ../Keypad.c:15:
 c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../Main.c
+Finished building: ../Keypad.c
  
 Building target: Keypad.elf
 Invoking: AVR C Linker
@@ -18,39 +18,8 @@ Finished building: Keypad.hex
  
 Invoking: AVRDude
 C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Keypad.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
 
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: warning: cannot set sck period. please check for usbasp firmware update.
-avrdude: reading input file "Keypad.hex"
-avrdude: input file Keypad.hex auto detected as Intel Hex
-avrdude: writing flash (17552 bytes):
-
-Writing | ################################################## | 100% 11.51s
-
-avrdude: 17552 bytes of flash written
-avrdude: verifying flash memory against Keypad.hex:
-avrdude: load data flash data from input file Keypad.hex:
-avrdude: input file Keypad.hex auto detected as Intel Hex
-avrdude: input file Keypad.hex contains 17552 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 8.66s
-
-avrdude: verifying ...
-avrdude: 17552 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-
-15:39:39 Build Finished (took 30s.624ms)
+20:26:34 Build Finished (took 1s.828ms)
 

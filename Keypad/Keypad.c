@@ -51,11 +51,9 @@ u8 Keybad_u8_GetButtonStatus(u8 button) {
 	if (col_value == 0) {
 		_delay_ms(5);
 		col_value = DIO_u8GetPinValue(Keypad_Port, real_row[row]);
-
 		if (col_value == 0) {
 			value = 1;
 		}
-
 	}
 	return value;
 }

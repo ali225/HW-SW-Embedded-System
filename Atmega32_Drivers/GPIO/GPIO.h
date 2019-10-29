@@ -28,17 +28,21 @@
 
 #define u8_Direction_input 0x00
 #define u8_Direction_output 0xFF
+
 //choose the default intialization for GPIO
 #define Init_direction_default  u8_Direction_input
 #define no_of_pins_on_port  8
+
 //=========================Initialization====================================
 /*Comment!: Initialization function */
  void GPIO_voidInit(void);
-//====================================================================
+
+
 
 //===================PIN==========================
 //Data
-/*Comment!: Read Pin Value */
+
+ /*Comment!: Read Pin Value */
  extern u8 GPIO_u8_ReadPinVal(u8 PinIdx,u8* PtrToVal, u8 Port_Name);
 
 /*Comment!: Write Pin Value */

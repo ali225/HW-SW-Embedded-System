@@ -9,9 +9,8 @@
 #include "../GPIO/GPIO.h"
 
 
-
- volatile unsigned char*  GPIO_ports[] = {myPORTA,myPORTB,myPORTC,myPORTD};
  volatile unsigned char*  GPIO_dirs[] = {myDDRA,myDDRB,myDDRC,myDDRD};
+ volatile unsigned char*  GPIO_ports[] = {myPORTA,myPORTB,myPORTC,myPORTD};
  volatile unsigned char*  GPIO_pins[] = {myPINA,myPINB,myPINC,myPIND};
 
 u8 get_port_index (u8 port_name)

@@ -2,21 +2,36 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="changLedstate" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value=""/>
+			<item value="chargeLedstate"/>
+			<item value="retstatus"/>
+			<item value="pinState_t"/>
+			<item value="pinX_t"/>
+			<item value="pinDir_t"/>
+			<item value="portX_t"/>
+			<item value="HIGH"/>
+			<item value="ok"/>
 		</list>
 		<list key="replacehistory">
+			<item value="changLedstate"/>
+			<item value="status"/>
+			<item value="PinState_t"/>
+			<item value="PinX_t"/>
+			<item value="PinDrt_t"/>
+			<item value="PortX_t"/>
+			<item value="LOW"/>
+			<item value="retstatus"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="385" key="DIALOG_WIDTH"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="523" key="DIALOG_HEIGHT"/>
+		<item value="336" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="454" key="DIALOG_HEIGHT"/>
 		<item value="117" key="DIALOG_X_ORIGIN"/>
 		<item value="101" key="DIALOG_Y_ORIGIN"/>
 	</section>

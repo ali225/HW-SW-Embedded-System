@@ -1,13 +1,13 @@
 /*
-
  * sevemmain.c
  *
  *  Created on: Jul 24, 2019
  *      Author: Eng Ali Gamal
-
+ */
 
 #include "Atmega32_registers.h"
-#include "mydelay.h"
+#include "util/delay_basic.h"
+//#include "mydelay.h"
 #include "GPIO/GPIO.h"
 
 #ifndef F_CPU
@@ -73,4 +73,3 @@ int main(void) {
 }
 
 
-*/

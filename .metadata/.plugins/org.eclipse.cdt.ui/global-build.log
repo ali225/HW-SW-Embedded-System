@@ -1,1089 +1,1094 @@
-20:02:44 **** Build of configuration Debug for project Dio_project ****
+18:46:47 **** Clean-only build of configuration Debug for project Embedded_Driver_Systems ****
+make clean 
+rm -rf  Embedded_Driver_Systems.hex  ./MCAL/interupts/src/MCAL_interupts.o  ./MCAL/Timer/MACL_Timer0.o ./MCAL/Timer/TIM0_cfg..o  ./MCAL/DIO/src/DIO.o  ./HAL/seven/src/HAL_seven.o  ./HAL/LED/src/HAL_LED.o  ./HAL/LCD/src/HAL_LCD.o  ./HAL/Keypad/src/HAL_KEYPAD.o  ./HAL/BUTTON/src/HAL_BUTTON.o  ./LCDmain.o ./Ledmain.o ./Timermain.o ./main.o ./sevenmain.o  Embedded_Driver_Systems.eep  avrdudedummy  Embedded_Driver_Systems.lss  ./MCAL/interupts/src/MCAL_interupts.d  ./MCAL/Timer/MACL_Timer0.d ./MCAL/Timer/TIM0_cfg..d  ./MCAL/DIO/src/DIO.d  ./HAL/seven/src/HAL_seven.d  ./HAL/LED/src/HAL_LED.d  ./HAL/LCD/src/HAL_LCD.d  ./HAL/Keypad/src/HAL_KEYPAD.d  ./HAL/BUTTON/src/HAL_BUTTON.d  ./LCDmain.d ./Ledmain.d ./Timermain.d ./main.d ./sevenmain.d  Embedded_Driver_Systems.elf
+ 
+18:47:04 **** Clean-only build of configuration Debug for project Embedded_Driver_Systems ****
+make clean 
+rm -rf  Embedded_Driver_Systems.hex  ./MCAL/interupts/src/MCAL_interupts.o  ./MCAL/Timer/MACL_Timer0.o ./MCAL/Timer/TIM0_cfg..o  ./MCAL/DIO/src/DIO.o  ./HAL/seven/src/HAL_seven.o  ./HAL/LED/src/HAL_LED.o  ./HAL/LCD/src/HAL_LCD.o  ./HAL/Keypad/src/HAL_KEYPAD.o  ./HAL/BUTTON/src/HAL_BUTTON.o  ./LCDmain.o ./Ledmain.o ./Timermain.o ./main.o ./sevenmain.o  Embedded_Driver_Systems.eep  avrdudedummy  Embedded_Driver_Systems.lss  ./MCAL/interupts/src/MCAL_interupts.d  ./MCAL/Timer/MACL_Timer0.d ./MCAL/Timer/TIM0_cfg..d  ./MCAL/DIO/src/DIO.d  ./HAL/seven/src/HAL_seven.d  ./HAL/LED/src/HAL_LED.d  ./HAL/LCD/src/HAL_LCD.d  ./HAL/Keypad/src/HAL_KEYPAD.d  ./HAL/BUTTON/src/HAL_BUTTON.d  ./LCDmain.d ./Ledmain.d ./Timermain.d ./main.d ./sevenmain.d  Embedded_Driver_Systems.elf
+ 
+18:47:04 **** Build of configuration Debug for project Embedded_Driver_Systems ****
 make all 
+Building file: ../MCAL/interupts/src/MCAL_interupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/interupts/src/MCAL_interupts.d" -MT"MCAL/interupts/src/MCAL_interupts.o" -c -o "MCAL/interupts/src/MCAL_interupts.o" "../MCAL/interupts/src/MCAL_interupts.c"
+In file included from ../MCAL/interupts/src/MCAL_interupts.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCAL/interupts/src/MCAL_interupts.c
+ 
+Building file: ../MCAL/Timer/MACL_Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/MACL_Timer0.d" -MT"MCAL/Timer/MACL_Timer0.o" -c -o "MCAL/Timer/MACL_Timer0.o" "../MCAL/Timer/MACL_Timer0.c"
+Finished building: ../MCAL/Timer/MACL_Timer0.c
+ 
+Building file: ../MCAL/Timer/TIM0_cfg..c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/TIM0_cfg..d" -MT"MCAL/Timer/TIM0_cfg..o" -c -o "MCAL/Timer/TIM0_cfg..o" "../MCAL/Timer/TIM0_cfg..c"
+Finished building: ../MCAL/Timer/TIM0_cfg..c
+ 
+Building file: ../MCAL/DIO/src/DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/DIO/src/DIO.d" -MT"MCAL/DIO/src/DIO.o" -c -o "MCAL/DIO/src/DIO.o" "../MCAL/DIO/src/DIO.c"
+Finished building: ../MCAL/DIO/src/DIO.c
+ 
+Building file: ../HAL/seven/src/HAL_seven.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/seven/src/HAL_seven.d" -MT"HAL/seven/src/HAL_seven.o" -c -o "HAL/seven/src/HAL_seven.o" "../HAL/seven/src/HAL_seven.c"
+In file included from ../HAL/seven/src/HAL_seven.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/seven/src/HAL_seven.c
+ 
+Building file: ../HAL/LED/src/HAL_LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LED/src/HAL_LED.d" -MT"HAL/LED/src/HAL_LED.o" -c -o "HAL/LED/src/HAL_LED.o" "../HAL/LED/src/HAL_LED.c"
+In file included from ../HAL/LED/src/HAL_LED.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LED/src/HAL_LED.c
+ 
+Building file: ../HAL/LCD/src/HAL_LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LCD/src/HAL_LCD.d" -MT"HAL/LCD/src/HAL_LCD.o" -c -o "HAL/LCD/src/HAL_LCD.o" "../HAL/LCD/src/HAL_LCD.c"
+In file included from ../HAL/LCD/src/HAL_LCD.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LCD/src/HAL_LCD.c
+ 
+Building file: ../HAL/Keypad/src/HAL_KEYPAD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/Keypad/src/HAL_KEYPAD.d" -MT"HAL/Keypad/src/HAL_KEYPAD.o" -c -o "HAL/Keypad/src/HAL_KEYPAD.o" "../HAL/Keypad/src/HAL_KEYPAD.c"
+In file included from ../HAL/Keypad/src/HAL_KEYPAD.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/Keypad/src/HAL_KEYPAD.c
+ 
+Building file: ../HAL/BUTTON/src/HAL_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/BUTTON/src/HAL_BUTTON.d" -MT"HAL/BUTTON/src/HAL_BUTTON.o" -c -o "HAL/BUTTON/src/HAL_BUTTON.o" "../HAL/BUTTON/src/HAL_BUTTON.c"
+In file included from ../HAL/BUTTON/src/HAL_BUTTON.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/BUTTON/src/HAL_BUTTON.c
+ 
+Building file: ../LCDmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LCDmain.d" -MT"LCDmain.o" -c -o "LCDmain.o" "../LCDmain.c"
+Finished building: ../LCDmain.c
+ 
+Building file: ../Ledmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Ledmain.d" -MT"Ledmain.o" -c -o "Ledmain.o" "../Ledmain.c"
+../Ledmain.c:85:3: warning: "/*" within comment
+../Ledmain.c:90:3: warning: "/*" within comment
+Finished building: ../Ledmain.c
+ 
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+In file included from ../Timermain.c:7:
+../HAL/BUTTON/inc/HAL_BUTTON.h:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initButton'
+../HAL/BUTTON/inc/HAL_BUTTON.h:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'getButtonState'
+In file included from ../Timermain.c:8:
+../HAL/LED/inc/HAL_LED.h:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initLed'
+../HAL/LED/inc/HAL_LED.h:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOnLed'
+../HAL/LED/inc/HAL_LED.h:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOffLed'
+../HAL/LED/inc/HAL_LED.h:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'toogleLed'
+In file included from ../Timermain.c:9:
+../MCAL/Timer/MACL_Timer0.h:26: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:29: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:32: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:35: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:38: error: expected ')' before 'state'
+../Timermain.c: In function 'main':
+../Timermain.c:13: error: 'u8' undeclared (first use in this function)
+../Timermain.c:13: error: (Each undeclared identifier is reported only once
+../Timermain.c:13: error: for each function it appears in.)
+../Timermain.c:13: error: expected ';' before 'Button'
+../Timermain.c:15: warning: implicit declaration of function 'initButton'
+../Timermain.c:16: warning: implicit declaration of function 'initLed'
+../Timermain.c:22: warning: implicit declaration of function 'getButtonState'
+../Timermain.c:22: error: 'Button' undeclared (first use in this function)
+../Timermain.c:25: warning: implicit declaration of function 'toogleLed'
+make: *** [Timermain.o] Error 1
+21:23:49 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
+make all 
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+In file included from ../Timermain.c:7:
+../HAL/BUTTON/inc/HAL_BUTTON.h:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initButton'
+../HAL/BUTTON/inc/HAL_BUTTON.h:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'getButtonState'
+In file included from ../Timermain.c:8:
+../HAL/LED/inc/HAL_LED.h:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initLed'
+../HAL/LED/inc/HAL_LED.h:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOnLed'
+../HAL/LED/inc/HAL_LED.h:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOffLed'
+../HAL/LED/inc/HAL_LED.h:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'toogleLed'
+In file included from ../Timermain.c:9:
+../MCAL/Timer/MACL_Timer0.h:26: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:29: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:32: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:35: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:38: error: expected ')' before 'state'
+make: *** [Timermain.o] Error 1
+21:27:29 **** Clean-only build of configuration Debug for project Embedded_Driver_Systems ****
+make clean 
+rm -rf  Embedded_Driver_Systems.hex  ./MCAL/interupts/src/MCAL_interupts.o  ./MCAL/Timer/MACL_Timer0.o ./MCAL/Timer/TIM0_cfg..o  ./MCAL/DIO/src/DIO.o  ./HAL/seven/src/HAL_seven.o  ./HAL/LED/src/HAL_LED.o  ./HAL/LCD/src/HAL_LCD.o  ./HAL/Keypad/src/HAL_KEYPAD.o  ./HAL/BUTTON/src/HAL_BUTTON.o  ./LCDmain.o ./Ledmain.o ./Timermain.o ./main.o ./sevenmain.o  Embedded_Driver_Systems.eep  avrdudedummy  Embedded_Driver_Systems.lss  ./MCAL/interupts/src/MCAL_interupts.d  ./MCAL/Timer/MACL_Timer0.d ./MCAL/Timer/TIM0_cfg..d  ./MCAL/DIO/src/DIO.d  ./HAL/seven/src/HAL_seven.d  ./HAL/LED/src/HAL_LED.d  ./HAL/LCD/src/HAL_LCD.d  ./HAL/Keypad/src/HAL_KEYPAD.d  ./HAL/BUTTON/src/HAL_BUTTON.d  ./LCDmain.d ./Ledmain.d ./Timermain.d ./main.d ./sevenmain.d  Embedded_Driver_Systems.elf
+ 
+21:27:32 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
+make all 
+Building file: ../MCAL/interupts/src/MCAL_interupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/interupts/src/MCAL_interupts.d" -MT"MCAL/interupts/src/MCAL_interupts.o" -c -o "MCAL/interupts/src/MCAL_interupts.o" "../MCAL/interupts/src/MCAL_interupts.c"
+In file included from ../MCAL/interupts/src/MCAL_interupts.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCAL/interupts/src/MCAL_interupts.c
+ 
+Building file: ../MCAL/Timer/MACL_Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/MACL_Timer0.d" -MT"MCAL/Timer/MACL_Timer0.o" -c -o "MCAL/Timer/MACL_Timer0.o" "../MCAL/Timer/MACL_Timer0.c"
+Finished building: ../MCAL/Timer/MACL_Timer0.c
+ 
+Building file: ../MCAL/Timer/TIM0_cfg..c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/TIM0_cfg..d" -MT"MCAL/Timer/TIM0_cfg..o" -c -o "MCAL/Timer/TIM0_cfg..o" "../MCAL/Timer/TIM0_cfg..c"
+Finished building: ../MCAL/Timer/TIM0_cfg..c
+ 
+Building file: ../MCAL/DIO/src/DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/DIO/src/DIO.d" -MT"MCAL/DIO/src/DIO.o" -c -o "MCAL/DIO/src/DIO.o" "../MCAL/DIO/src/DIO.c"
+Finished building: ../MCAL/DIO/src/DIO.c
+ 
+Building file: ../HAL/seven/src/HAL_seven.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/seven/src/HAL_seven.d" -MT"HAL/seven/src/HAL_seven.o" -c -o "HAL/seven/src/HAL_seven.o" "../HAL/seven/src/HAL_seven.c"
+In file included from ../HAL/seven/src/HAL_seven.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/seven/src/HAL_seven.c
+ 
+Building file: ../HAL/LED/src/HAL_LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LED/src/HAL_LED.d" -MT"HAL/LED/src/HAL_LED.o" -c -o "HAL/LED/src/HAL_LED.o" "../HAL/LED/src/HAL_LED.c"
+In file included from ../HAL/LED/src/HAL_LED.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LED/src/HAL_LED.c
+ 
+Building file: ../HAL/LCD/src/HAL_LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LCD/src/HAL_LCD.d" -MT"HAL/LCD/src/HAL_LCD.o" -c -o "HAL/LCD/src/HAL_LCD.o" "../HAL/LCD/src/HAL_LCD.c"
+In file included from ../HAL/LCD/src/HAL_LCD.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LCD/src/HAL_LCD.c
+ 
+Building file: ../HAL/Keypad/src/HAL_KEYPAD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/Keypad/src/HAL_KEYPAD.d" -MT"HAL/Keypad/src/HAL_KEYPAD.o" -c -o "HAL/Keypad/src/HAL_KEYPAD.o" "../HAL/Keypad/src/HAL_KEYPAD.c"
+In file included from ../HAL/Keypad/src/HAL_KEYPAD.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/Keypad/src/HAL_KEYPAD.c
+ 
+Building file: ../HAL/BUTTON/src/HAL_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/BUTTON/src/HAL_BUTTON.d" -MT"HAL/BUTTON/src/HAL_BUTTON.o" -c -o "HAL/BUTTON/src/HAL_BUTTON.o" "../HAL/BUTTON/src/HAL_BUTTON.c"
+In file included from ../HAL/BUTTON/src/HAL_BUTTON.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/BUTTON/src/HAL_BUTTON.c
+ 
+Building file: ../LCDmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LCDmain.d" -MT"LCDmain.o" -c -o "LCDmain.o" "../LCDmain.c"
+Finished building: ../LCDmain.c
+ 
+Building file: ../Ledmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Ledmain.d" -MT"Ledmain.o" -c -o "Ledmain.o" "../Ledmain.c"
+../Ledmain.c:85:3: warning: "/*" within comment
+../Ledmain.c:90:3: warning: "/*" within comment
+Finished building: ../Ledmain.c
+ 
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+In file included from ../Timermain.c:7:
+../HAL/BUTTON/inc/HAL_BUTTON.h:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initButton'
+../HAL/BUTTON/inc/HAL_BUTTON.h:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'getButtonState'
+In file included from ../Timermain.c:8:
+../HAL/LED/inc/HAL_LED.h:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initLed'
+../HAL/LED/inc/HAL_LED.h:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOnLed'
+../HAL/LED/inc/HAL_LED.h:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOffLed'
+../HAL/LED/inc/HAL_LED.h:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'toogleLed'
+In file included from ../Timermain.c:9:
+../MCAL/Timer/MACL_Timer0.h:26: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:29: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:32: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:35: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:38: error: expected ')' before 'state'
+make: *** [Timermain.o] Error 1
+21:29:11 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
+make all 
+Building file: ../MCAL/Timer/MACL_Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/MACL_Timer0.d" -MT"MCAL/Timer/MACL_Timer0.o" -c -o "MCAL/Timer/MACL_Timer0.o" "../MCAL/Timer/MACL_Timer0.c"
+Finished building: ../MCAL/Timer/MACL_Timer0.c
+ 
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+In file included from ../Timermain.c:7:
+../HAL/BUTTON/inc/HAL_BUTTON.h:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initButton'
+../HAL/BUTTON/inc/HAL_BUTTON.h:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'getButtonState'
+In file included from ../Timermain.c:8:
+../HAL/LED/inc/HAL_LED.h:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initLed'
+../HAL/LED/inc/HAL_LED.h:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOnLed'
+../HAL/LED/inc/HAL_LED.h:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOffLed'
+../HAL/LED/inc/HAL_LED.h:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'toogleLed'
+In file included from ../Timermain.c:9:
+../MCAL/Timer/MACL_Timer0.h:26: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:29: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:32: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:35: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:38: error: expected ')' before 'state'
+make: *** [Timermain.o] Error 1
+21:29:47 **** Clean-only build of configuration Debug for project Embedded_Driver_Systems ****
+make clean 
+rm -rf  Embedded_Driver_Systems.hex  ./MCAL/interupts/src/MCAL_interupts.o  ./MCAL/Timer/MACL_Timer0.o ./MCAL/Timer/TIM0_cfg..o  ./MCAL/DIO/src/DIO.o  ./HAL/seven/src/HAL_seven.o  ./HAL/LED/src/HAL_LED.o  ./HAL/LCD/src/HAL_LCD.o  ./HAL/Keypad/src/HAL_KEYPAD.o  ./HAL/BUTTON/src/HAL_BUTTON.o  ./LCDmain.o ./Ledmain.o ./Timermain.o ./main.o ./sevenmain.o  Embedded_Driver_Systems.eep  avrdudedummy  Embedded_Driver_Systems.lss  ./MCAL/interupts/src/MCAL_interupts.d  ./MCAL/Timer/MACL_Timer0.d ./MCAL/Timer/TIM0_cfg..d  ./MCAL/DIO/src/DIO.d  ./HAL/seven/src/HAL_seven.d  ./HAL/LED/src/HAL_LED.d  ./HAL/LCD/src/HAL_LCD.d  ./HAL/Keypad/src/HAL_KEYPAD.d  ./HAL/BUTTON/src/HAL_BUTTON.d  ./LCDmain.d ./Ledmain.d ./Timermain.d ./main.d ./sevenmain.d  Embedded_Driver_Systems.elf
+ 
+21:29:47 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
+make all 
+Building file: ../MCAL/interupts/src/MCAL_interupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/interupts/src/MCAL_interupts.d" -MT"MCAL/interupts/src/MCAL_interupts.o" -c -o "MCAL/interupts/src/MCAL_interupts.o" "../MCAL/interupts/src/MCAL_interupts.c"
+In file included from ../MCAL/interupts/src/MCAL_interupts.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCAL/interupts/src/MCAL_interupts.c
+ 
+Building file: ../MCAL/Timer/MACL_Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/MACL_Timer0.d" -MT"MCAL/Timer/MACL_Timer0.o" -c -o "MCAL/Timer/MACL_Timer0.o" "../MCAL/Timer/MACL_Timer0.c"
+Finished building: ../MCAL/Timer/MACL_Timer0.c
+ 
+Building file: ../MCAL/Timer/TIM0_cfg..c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/TIM0_cfg..d" -MT"MCAL/Timer/TIM0_cfg..o" -c -o "MCAL/Timer/TIM0_cfg..o" "../MCAL/Timer/TIM0_cfg..c"
+Finished building: ../MCAL/Timer/TIM0_cfg..c
+ 
+Building file: ../MCAL/DIO/src/DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/DIO/src/DIO.d" -MT"MCAL/DIO/src/DIO.o" -c -o "MCAL/DIO/src/DIO.o" "../MCAL/DIO/src/DIO.c"
+Finished building: ../MCAL/DIO/src/DIO.c
+ 
+Building file: ../HAL/seven/src/HAL_seven.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/seven/src/HAL_seven.d" -MT"HAL/seven/src/HAL_seven.o" -c -o "HAL/seven/src/HAL_seven.o" "../HAL/seven/src/HAL_seven.c"
+In file included from ../HAL/seven/src/HAL_seven.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/seven/src/HAL_seven.c
+ 
+Building file: ../HAL/LED/src/HAL_LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LED/src/HAL_LED.d" -MT"HAL/LED/src/HAL_LED.o" -c -o "HAL/LED/src/HAL_LED.o" "../HAL/LED/src/HAL_LED.c"
+In file included from ../HAL/LED/src/HAL_LED.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LED/src/HAL_LED.c
+ 
+Building file: ../HAL/LCD/src/HAL_LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LCD/src/HAL_LCD.d" -MT"HAL/LCD/src/HAL_LCD.o" -c -o "HAL/LCD/src/HAL_LCD.o" "../HAL/LCD/src/HAL_LCD.c"
+In file included from ../HAL/LCD/src/HAL_LCD.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LCD/src/HAL_LCD.c
+ 
+Building file: ../HAL/Keypad/src/HAL_KEYPAD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/Keypad/src/HAL_KEYPAD.d" -MT"HAL/Keypad/src/HAL_KEYPAD.o" -c -o "HAL/Keypad/src/HAL_KEYPAD.o" "../HAL/Keypad/src/HAL_KEYPAD.c"
+In file included from ../HAL/Keypad/src/HAL_KEYPAD.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/Keypad/src/HAL_KEYPAD.c
+ 
+Building file: ../HAL/BUTTON/src/HAL_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/BUTTON/src/HAL_BUTTON.d" -MT"HAL/BUTTON/src/HAL_BUTTON.o" -c -o "HAL/BUTTON/src/HAL_BUTTON.o" "../HAL/BUTTON/src/HAL_BUTTON.c"
+In file included from ../HAL/BUTTON/src/HAL_BUTTON.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/BUTTON/src/HAL_BUTTON.c
+ 
+Building file: ../LCDmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LCDmain.d" -MT"LCDmain.o" -c -o "LCDmain.o" "../LCDmain.c"
+Finished building: ../LCDmain.c
+ 
+Building file: ../Ledmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Ledmain.d" -MT"Ledmain.o" -c -o "Ledmain.o" "../Ledmain.c"
+../Ledmain.c:85:3: warning: "/*" within comment
+../Ledmain.c:90:3: warning: "/*" within comment
+Finished building: ../Ledmain.c
+ 
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+In file included from ../Timermain.c:7:
+../HAL/BUTTON/inc/HAL_BUTTON.h:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initButton'
+../HAL/BUTTON/inc/HAL_BUTTON.h:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'getButtonState'
+In file included from ../Timermain.c:8:
+../HAL/LED/inc/HAL_LED.h:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initLed'
+../HAL/LED/inc/HAL_LED.h:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOnLed'
+../HAL/LED/inc/HAL_LED.h:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOffLed'
+../HAL/LED/inc/HAL_LED.h:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'toogleLed'
+In file included from ../Timermain.c:9:
+../MCAL/Timer/MACL_Timer0.h:26: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:29: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:32: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:35: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:38: error: expected ')' before 'state'
+make: *** [Timermain.o] Error 1
+21:30:44 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
+make all 
+Building file: ../MCAL/Timer/MACL_Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/MACL_Timer0.d" -MT"MCAL/Timer/MACL_Timer0.o" -c -o "MCAL/Timer/MACL_Timer0.o" "../MCAL/Timer/MACL_Timer0.c"
+Finished building: ../MCAL/Timer/MACL_Timer0.c
+ 
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+In file included from ../Timermain.c:7:
+../HAL/BUTTON/inc/HAL_BUTTON.h:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initButton'
+../HAL/BUTTON/inc/HAL_BUTTON.h:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'getButtonState'
+In file included from ../Timermain.c:8:
+../HAL/LED/inc/HAL_LED.h:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initLed'
+../HAL/LED/inc/HAL_LED.h:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOnLed'
+../HAL/LED/inc/HAL_LED.h:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOffLed'
+../HAL/LED/inc/HAL_LED.h:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'toogleLed'
+In file included from ../Timermain.c:9:
+../MCAL/Timer/MACL_Timer0.h:26: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:29: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:32: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:35: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:38: error: expected ')' before 'state'
+make: *** [Timermain.o] Error 1
+21:33:49 **** Clean-only build of configuration Debug for project Embedded_Driver_Systems ****
+make clean 
+rm -rf  Embedded_Driver_Systems.hex  ./MCAL/interupts/src/MCAL_interupts.o  ./MCAL/Timer/MACL_Timer0.o ./MCAL/Timer/TIM0_cfg..o  ./MCAL/DIO/src/DIO.o  ./HAL/seven/src/HAL_seven.o  ./HAL/LED/src/HAL_LED.o  ./HAL/LCD/src/HAL_LCD.o  ./HAL/Keypad/src/HAL_KEYPAD.o  ./HAL/BUTTON/src/HAL_BUTTON.o  ./LCDmain.o ./Ledmain.o ./Timermain.o ./main.o ./sevenmain.o  Embedded_Driver_Systems.eep  avrdudedummy  Embedded_Driver_Systems.lss  ./MCAL/interupts/src/MCAL_interupts.d  ./MCAL/Timer/MACL_Timer0.d ./MCAL/Timer/TIM0_cfg..d  ./MCAL/DIO/src/DIO.d  ./HAL/seven/src/HAL_seven.d  ./HAL/LED/src/HAL_LED.d  ./HAL/LCD/src/HAL_LCD.d  ./HAL/Keypad/src/HAL_KEYPAD.d  ./HAL/BUTTON/src/HAL_BUTTON.d  ./LCDmain.d ./Ledmain.d ./Timermain.d ./main.d ./sevenmain.d  Embedded_Driver_Systems.elf
+ 
+21:33:50 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
+make all 
+Building file: ../MCAL/interupts/src/MCAL_interupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/interupts/src/MCAL_interupts.d" -MT"MCAL/interupts/src/MCAL_interupts.o" -c -o "MCAL/interupts/src/MCAL_interupts.o" "../MCAL/interupts/src/MCAL_interupts.c"
+In file included from ../MCAL/interupts/src/MCAL_interupts.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCAL/interupts/src/MCAL_interupts.c
+ 
+Building file: ../MCAL/Timer/MACL_Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/MACL_Timer0.d" -MT"MCAL/Timer/MACL_Timer0.o" -c -o "MCAL/Timer/MACL_Timer0.o" "../MCAL/Timer/MACL_Timer0.c"
+Finished building: ../MCAL/Timer/MACL_Timer0.c
+ 
+Building file: ../MCAL/Timer/TIM0_cfg..c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/TIM0_cfg..d" -MT"MCAL/Timer/TIM0_cfg..o" -c -o "MCAL/Timer/TIM0_cfg..o" "../MCAL/Timer/TIM0_cfg..c"
+Finished building: ../MCAL/Timer/TIM0_cfg..c
+ 
+Building file: ../MCAL/DIO/src/DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/DIO/src/DIO.d" -MT"MCAL/DIO/src/DIO.o" -c -o "MCAL/DIO/src/DIO.o" "../MCAL/DIO/src/DIO.c"
+Finished building: ../MCAL/DIO/src/DIO.c
+ 
+Building file: ../HAL/seven/src/HAL_seven.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/seven/src/HAL_seven.d" -MT"HAL/seven/src/HAL_seven.o" -c -o "HAL/seven/src/HAL_seven.o" "../HAL/seven/src/HAL_seven.c"
+In file included from ../HAL/seven/src/HAL_seven.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/seven/src/HAL_seven.c
+ 
+Building file: ../HAL/LED/src/HAL_LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LED/src/HAL_LED.d" -MT"HAL/LED/src/HAL_LED.o" -c -o "HAL/LED/src/HAL_LED.o" "../HAL/LED/src/HAL_LED.c"
+In file included from ../HAL/LED/src/HAL_LED.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LED/src/HAL_LED.c
+ 
+Building file: ../HAL/LCD/src/HAL_LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LCD/src/HAL_LCD.d" -MT"HAL/LCD/src/HAL_LCD.o" -c -o "HAL/LCD/src/HAL_LCD.o" "../HAL/LCD/src/HAL_LCD.c"
+In file included from ../HAL/LCD/src/HAL_LCD.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LCD/src/HAL_LCD.c
+ 
+Building file: ../HAL/Keypad/src/HAL_KEYPAD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/Keypad/src/HAL_KEYPAD.d" -MT"HAL/Keypad/src/HAL_KEYPAD.o" -c -o "HAL/Keypad/src/HAL_KEYPAD.o" "../HAL/Keypad/src/HAL_KEYPAD.c"
+In file included from ../HAL/Keypad/src/HAL_KEYPAD.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/Keypad/src/HAL_KEYPAD.c
+ 
+Building file: ../HAL/BUTTON/src/HAL_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/BUTTON/src/HAL_BUTTON.d" -MT"HAL/BUTTON/src/HAL_BUTTON.o" -c -o "HAL/BUTTON/src/HAL_BUTTON.o" "../HAL/BUTTON/src/HAL_BUTTON.c"
+In file included from ../HAL/BUTTON/src/HAL_BUTTON.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/BUTTON/src/HAL_BUTTON.c
+ 
+Building file: ../LCDmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LCDmain.d" -MT"LCDmain.o" -c -o "LCDmain.o" "../LCDmain.c"
+Finished building: ../LCDmain.c
+ 
+Building file: ../Ledmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Ledmain.d" -MT"Ledmain.o" -c -o "Ledmain.o" "../Ledmain.c"
+../Ledmain.c:85:3: warning: "/*" within comment
+../Ledmain.c:90:3: warning: "/*" within comment
+Finished building: ../Ledmain.c
+ 
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+In file included from ../Timermain.c:7:
+../HAL/BUTTON/inc/HAL_BUTTON.h:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initButton'
+../HAL/BUTTON/inc/HAL_BUTTON.h:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'getButtonState'
+In file included from ../Timermain.c:8:
+../HAL/LED/inc/HAL_LED.h:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initLed'
+../HAL/LED/inc/HAL_LED.h:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOnLed'
+../HAL/LED/inc/HAL_LED.h:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOffLed'
+../HAL/LED/inc/HAL_LED.h:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'toogleLed'
+In file included from ../Timermain.c:9:
+../MCAL/Timer/MACL_Timer0.h:26: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:29: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:32: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:35: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:38: error: expected ')' before 'state'
+make: *** [Timermain.o] Error 1
+21:35:26 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
+make all 
+Building file: ../HAL/BUTTON/src/HAL_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/BUTTON/src/HAL_BUTTON.d" -MT"HAL/BUTTON/src/HAL_BUTTON.o" -c -o "HAL/BUTTON/src/HAL_BUTTON.o" "../HAL/BUTTON/src/HAL_BUTTON.c"
+In file included from ../HAL/BUTTON/src/HAL_BUTTON.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/BUTTON/src/HAL_BUTTON.c
+ 
+Building file: ../Ledmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Ledmain.d" -MT"Ledmain.o" -c -o "Ledmain.o" "../Ledmain.c"
+../Ledmain.c:85:3: warning: "/*" within comment
+../Ledmain.c:90:3: warning: "/*" within comment
+Finished building: ../Ledmain.c
+ 
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+In file included from ../Timermain.c:7:
+../HAL/BUTTON/inc/HAL_BUTTON.h:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initButton'
+../HAL/BUTTON/inc/HAL_BUTTON.h:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'getButtonState'
+In file included from ../Timermain.c:8:
+../HAL/LED/inc/HAL_LED.h:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'initLed'
+../HAL/LED/inc/HAL_LED.h:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOnLed'
+../HAL/LED/inc/HAL_LED.h:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'turnOffLed'
+../HAL/LED/inc/HAL_LED.h:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'toogleLed'
+In file included from ../Timermain.c:9:
+../MCAL/Timer/MACL_Timer0.h:26: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:29: error: expected ')' before 'state'
+../MCAL/Timer/MACL_Timer0.h:32: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:35: error: expected ')' before 'value'
+../MCAL/Timer/MACL_Timer0.h:38: error: expected ')' before 'state'
+make: *** [Timermain.o] Error 1
+21:35:56 **** Clean-only build of configuration Debug for project Embedded_Driver_Systems ****
+make clean 
+rm -rf  Embedded_Driver_Systems.hex  ./MCAL/interupts/src/MCAL_interupts.o  ./MCAL/Timer/MACL_Timer0.o ./MCAL/Timer/TIM0_cfg..o  ./MCAL/DIO/src/DIO.o  ./HAL/seven/src/HAL_seven.o  ./HAL/LED/src/HAL_LED.o  ./HAL/LCD/src/HAL_LCD.o  ./HAL/Keypad/src/HAL_KEYPAD.o  ./HAL/BUTTON/src/HAL_BUTTON.o  ./LCDmain.o ./Ledmain.o ./Timermain.o ./main.o ./sevenmain.o  Embedded_Driver_Systems.eep  avrdudedummy  Embedded_Driver_Systems.lss  ./MCAL/interupts/src/MCAL_interupts.d  ./MCAL/Timer/MACL_Timer0.d ./MCAL/Timer/TIM0_cfg..d  ./MCAL/DIO/src/DIO.d  ./HAL/seven/src/HAL_seven.d  ./HAL/LED/src/HAL_LED.d  ./HAL/LCD/src/HAL_LCD.d  ./HAL/Keypad/src/HAL_KEYPAD.d  ./HAL/BUTTON/src/HAL_BUTTON.d  ./LCDmain.d ./Ledmain.d ./Timermain.d ./main.d ./sevenmain.d  Embedded_Driver_Systems.elf
+ 
+21:35:57 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
+make all 
+Building file: ../MCAL/interupts/src/MCAL_interupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/interupts/src/MCAL_interupts.d" -MT"MCAL/interupts/src/MCAL_interupts.o" -c -o "MCAL/interupts/src/MCAL_interupts.o" "../MCAL/interupts/src/MCAL_interupts.c"
+In file included from ../MCAL/interupts/src/MCAL_interupts.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCAL/interupts/src/MCAL_interupts.c
+ 
+Building file: ../MCAL/Timer/MACL_Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/MACL_Timer0.d" -MT"MCAL/Timer/MACL_Timer0.o" -c -o "MCAL/Timer/MACL_Timer0.o" "../MCAL/Timer/MACL_Timer0.c"
+Finished building: ../MCAL/Timer/MACL_Timer0.c
+ 
+Building file: ../MCAL/Timer/TIM0_cfg..c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/TIM0_cfg..d" -MT"MCAL/Timer/TIM0_cfg..o" -c -o "MCAL/Timer/TIM0_cfg..o" "../MCAL/Timer/TIM0_cfg..c"
+Finished building: ../MCAL/Timer/TIM0_cfg..c
+ 
+Building file: ../MCAL/DIO/src/DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/DIO/src/DIO.d" -MT"MCAL/DIO/src/DIO.o" -c -o "MCAL/DIO/src/DIO.o" "../MCAL/DIO/src/DIO.c"
+Finished building: ../MCAL/DIO/src/DIO.c
+ 
+Building file: ../HAL/seven/src/HAL_seven.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/seven/src/HAL_seven.d" -MT"HAL/seven/src/HAL_seven.o" -c -o "HAL/seven/src/HAL_seven.o" "../HAL/seven/src/HAL_seven.c"
+In file included from ../HAL/seven/src/HAL_seven.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/seven/src/HAL_seven.c
+ 
+Building file: ../HAL/LED/src/HAL_LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LED/src/HAL_LED.d" -MT"HAL/LED/src/HAL_LED.o" -c -o "HAL/LED/src/HAL_LED.o" "../HAL/LED/src/HAL_LED.c"
+In file included from ../HAL/LED/src/HAL_LED.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LED/src/HAL_LED.c
+ 
+Building file: ../HAL/LCD/src/HAL_LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LCD/src/HAL_LCD.d" -MT"HAL/LCD/src/HAL_LCD.o" -c -o "HAL/LCD/src/HAL_LCD.o" "../HAL/LCD/src/HAL_LCD.c"
+In file included from ../HAL/LCD/src/HAL_LCD.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LCD/src/HAL_LCD.c
+ 
+Building file: ../HAL/Keypad/src/HAL_KEYPAD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/Keypad/src/HAL_KEYPAD.d" -MT"HAL/Keypad/src/HAL_KEYPAD.o" -c -o "HAL/Keypad/src/HAL_KEYPAD.o" "../HAL/Keypad/src/HAL_KEYPAD.c"
+In file included from ../HAL/Keypad/src/HAL_KEYPAD.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/Keypad/src/HAL_KEYPAD.c
+ 
+Building file: ../HAL/BUTTON/src/HAL_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/BUTTON/src/HAL_BUTTON.d" -MT"HAL/BUTTON/src/HAL_BUTTON.o" -c -o "HAL/BUTTON/src/HAL_BUTTON.o" "../HAL/BUTTON/src/HAL_BUTTON.c"
+In file included from ../HAL/BUTTON/src/HAL_BUTTON.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/BUTTON/src/HAL_BUTTON.c
+ 
+Building file: ../LCDmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LCDmain.d" -MT"LCDmain.o" -c -o "LCDmain.o" "../LCDmain.c"
+Finished building: ../LCDmain.c
+ 
+Building file: ../Ledmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Ledmain.d" -MT"Ledmain.o" -c -o "Ledmain.o" "../Ledmain.c"
+In file included from ../Ledmain.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Ledmain.c:41: error: expected identifier or '(' before 'while'
+make: *** [Ledmain.o] Error 1
+21:36:21 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
+make all 
+Building file: ../Ledmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Ledmain.d" -MT"Ledmain.o" -c -o "Ledmain.o" "../Ledmain.c"
+In file included from ../Ledmain.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Ledmain.c:41: error: expected identifier or '(' before 'while'
+make: *** [Ledmain.o] Error 1
+21:36:41 **** Clean-only build of configuration Debug for project Embedded_Driver_Systems ****
+make clean 
+rm -rf  Embedded_Driver_Systems.hex  ./MCAL/interupts/src/MCAL_interupts.o  ./MCAL/Timer/MACL_Timer0.o ./MCAL/Timer/TIM0_cfg..o  ./MCAL/DIO/src/DIO.o  ./HAL/seven/src/HAL_seven.o  ./HAL/LED/src/HAL_LED.o  ./HAL/LCD/src/HAL_LCD.o  ./HAL/Keypad/src/HAL_KEYPAD.o  ./HAL/BUTTON/src/HAL_BUTTON.o  ./LCDmain.o ./Ledmain.o ./Timermain.o ./main.o ./sevenmain.o  Embedded_Driver_Systems.eep  avrdudedummy  Embedded_Driver_Systems.lss  ./MCAL/interupts/src/MCAL_interupts.d  ./MCAL/Timer/MACL_Timer0.d ./MCAL/Timer/TIM0_cfg..d  ./MCAL/DIO/src/DIO.d  ./HAL/seven/src/HAL_seven.d  ./HAL/LED/src/HAL_LED.d  ./HAL/LCD/src/HAL_LCD.d  ./HAL/Keypad/src/HAL_KEYPAD.d  ./HAL/BUTTON/src/HAL_BUTTON.d  ./LCDmain.d ./Ledmain.d ./Timermain.d ./main.d ./sevenmain.d  Embedded_Driver_Systems.elf
+ 
+21:36:42 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
+make all 
+Building file: ../MCAL/interupts/src/MCAL_interupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/interupts/src/MCAL_interupts.d" -MT"MCAL/interupts/src/MCAL_interupts.o" -c -o "MCAL/interupts/src/MCAL_interupts.o" "../MCAL/interupts/src/MCAL_interupts.c"
+In file included from ../MCAL/interupts/src/MCAL_interupts.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCAL/interupts/src/MCAL_interupts.c
+ 
+Building file: ../MCAL/Timer/MACL_Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/MACL_Timer0.d" -MT"MCAL/Timer/MACL_Timer0.o" -c -o "MCAL/Timer/MACL_Timer0.o" "../MCAL/Timer/MACL_Timer0.c"
+Finished building: ../MCAL/Timer/MACL_Timer0.c
+ 
+Building file: ../MCAL/Timer/TIM0_cfg..c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/TIM0_cfg..d" -MT"MCAL/Timer/TIM0_cfg..o" -c -o "MCAL/Timer/TIM0_cfg..o" "../MCAL/Timer/TIM0_cfg..c"
+Finished building: ../MCAL/Timer/TIM0_cfg..c
+ 
+Building file: ../MCAL/DIO/src/DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/DIO/src/DIO.d" -MT"MCAL/DIO/src/DIO.o" -c -o "MCAL/DIO/src/DIO.o" "../MCAL/DIO/src/DIO.c"
+Finished building: ../MCAL/DIO/src/DIO.c
+ 
+Building file: ../HAL/seven/src/HAL_seven.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/seven/src/HAL_seven.d" -MT"HAL/seven/src/HAL_seven.o" -c -o "HAL/seven/src/HAL_seven.o" "../HAL/seven/src/HAL_seven.c"
+In file included from ../HAL/seven/src/HAL_seven.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/seven/src/HAL_seven.c
+ 
+Building file: ../HAL/LED/src/HAL_LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LED/src/HAL_LED.d" -MT"HAL/LED/src/HAL_LED.o" -c -o "HAL/LED/src/HAL_LED.o" "../HAL/LED/src/HAL_LED.c"
+In file included from ../HAL/LED/src/HAL_LED.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LED/src/HAL_LED.c
+ 
+Building file: ../HAL/LCD/src/HAL_LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LCD/src/HAL_LCD.d" -MT"HAL/LCD/src/HAL_LCD.o" -c -o "HAL/LCD/src/HAL_LCD.o" "../HAL/LCD/src/HAL_LCD.c"
+In file included from ../HAL/LCD/src/HAL_LCD.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LCD/src/HAL_LCD.c
+ 
+Building file: ../HAL/Keypad/src/HAL_KEYPAD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/Keypad/src/HAL_KEYPAD.d" -MT"HAL/Keypad/src/HAL_KEYPAD.o" -c -o "HAL/Keypad/src/HAL_KEYPAD.o" "../HAL/Keypad/src/HAL_KEYPAD.c"
+In file included from ../HAL/Keypad/src/HAL_KEYPAD.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/Keypad/src/HAL_KEYPAD.c
+ 
+Building file: ../HAL/BUTTON/src/HAL_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/BUTTON/src/HAL_BUTTON.d" -MT"HAL/BUTTON/src/HAL_BUTTON.o" -c -o "HAL/BUTTON/src/HAL_BUTTON.o" "../HAL/BUTTON/src/HAL_BUTTON.c"
+In file included from ../HAL/BUTTON/src/HAL_BUTTON.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/BUTTON/src/HAL_BUTTON.c
+ 
+Building file: ../LCDmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LCDmain.d" -MT"LCDmain.o" -c -o "LCDmain.o" "../LCDmain.c"
+Finished building: ../LCDmain.c
+ 
+Building file: ../Ledmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Ledmain.d" -MT"Ledmain.o" -c -o "Ledmain.o" "../Ledmain.c"
+In file included from ../Ledmain.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Ledmain.c:81:3: warning: "/*" within comment
+../Ledmain.c:86:3: warning: "/*" within comment
+Finished building: ../Ledmain.c
+ 
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+Finished building: ../Timermain.c
+ 
 Building file: ../main.c
 Invoking: AVR Compiler
 avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:236:3: warning: "/*" within comment
+../main.c:241:3: warning: "/*" within comment
 Finished building: ../main.c
  
-Building target: Dio_project.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_project.map -mmcu=atmega32 -o "Dio_project.elf"  ./main.o   
-c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
-make: *** [Dio_project.elf] Error 1
-20:04:13 **** Incremental Build of configuration Debug for project Dio_project ****
-make all 
-Building target: Dio_project.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_project.map -mmcu=atmega32 -o "Dio_project.elf"  ./main.o   
-c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
-make: *** [Dio_project.elf] Error 1
-20:07:04 **** Incremental Build of configuration Debug for project Dio_project ****
-make all 
-Building target: Dio_project.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_project.map -mmcu=atmega32 -o "Dio_project.elf"  ./main.o   
-c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
-make: *** [Dio_project.elf] Error 1
-12:22:15 **** Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
+Building file: ../sevenmain.c
 Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-Finished building: ../main.c
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"sevenmain.d" -MT"sevenmain.o" -c -o "sevenmain.o" "../sevenmain.c"
+Finished building: ../sevenmain.c
  
-Building target: Dio_First_project.elf
+Building target: Embedded_Driver_Systems.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
-make: *** [Dio_First_project.elf] Error 1
-12:22:52 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-Finished building: ../main.c
- 
-Building target: Dio_First_project.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
+avr-gcc -Wl,-Map,Embedded_Driver_Systems.map -mmcu=atmega32 -o "Embedded_Driver_Systems.elf"  ./MCAL/interupts/src/MCAL_interupts.o  ./MCAL/Timer/MACL_Timer0.o ./MCAL/Timer/TIM0_cfg..o  ./MCAL/DIO/src/DIO.o  ./HAL/seven/src/HAL_seven.o  ./HAL/LED/src/HAL_LED.o  ./HAL/LCD/src/HAL_LCD.o  ./HAL/Keypad/src/HAL_KEYPAD.o  ./HAL/BUTTON/src/HAL_BUTTON.o  ./LCDmain.o ./Ledmain.o ./Timermain.o ./main.o ./sevenmain.o   
+Finished building target: Embedded_Driver_Systems.elf
  
 Invoking: AVR Create Extended Listing
-avr-objdump -h -S Dio_First_project.elf  >"Dio_First_project.lss"
-Finished building: Dio_First_project.lss
+avr-objdump -h -S Embedded_Driver_Systems.elf  >"Embedded_Driver_Systems.lss"
+Finished building: Embedded_Driver_Systems.lss
  
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Dio_First_project.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:     122 bytes (0.4% Full)
-(.text + .data + .bootloader)
-
-Data:          0 bytes (0.0% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Embedded_Driver_Systems.elf  "Embedded_Driver_Systems.hex"
+Finished building: Embedded_Driver_Systems.hex
  
-20:08:20 **** Incremental Build of configuration Debug for project Dio_First_project ****
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Embedded_Driver_Systems.elf  "Embedded_Driver_Systems.eep"
+Finished building: Embedded_Driver_Systems.eep
+ 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Embedded_Driver_Systems.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+21:39:48 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
 make all 
-Building file: ../main.c
+Building file: ../Ledmain.c
 Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-Finished building: ../main.c
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Ledmain.d" -MT"Ledmain.o" -c -o "Ledmain.o" "../Ledmain.c"
+../Ledmain.c:81:3: warning: "/*" within comment
+../Ledmain.c:86:3: warning: "/*" within comment
+Finished building: ../Ledmain.c
  
-Building target: Dio_First_project.elf
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+In file included from ../Timermain.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Timermain.c
+ 
+Building target: Embedded_Driver_Systems.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
+avr-gcc -Wl,-Map,Embedded_Driver_Systems.map -mmcu=atmega32 -o "Embedded_Driver_Systems.elf"  ./MCAL/interupts/src/MCAL_interupts.o  ./MCAL/Timer/MACL_Timer0.o ./MCAL/Timer/TIM0_cfg..o  ./MCAL/DIO/src/DIO.o  ./HAL/seven/src/HAL_seven.o  ./HAL/LED/src/HAL_LED.o  ./HAL/LCD/src/HAL_LCD.o  ./HAL/Keypad/src/HAL_KEYPAD.o  ./HAL/BUTTON/src/HAL_BUTTON.o  ./LCDmain.o ./Ledmain.o ./Timermain.o ./main.o ./sevenmain.o   
+Finished building target: Embedded_Driver_Systems.elf
  
 Invoking: AVR Create Extended Listing
-avr-objdump -h -S Dio_First_project.elf  >"Dio_First_project.lss"
-Finished building: Dio_First_project.lss
+avr-objdump -h -S Embedded_Driver_Systems.elf  >"Embedded_Driver_Systems.lss"
+Finished building: Embedded_Driver_Systems.lss
  
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Dio_First_project.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:     122 bytes (0.4% Full)
-(.text + .data + .bootloader)
-
-Data:          0 bytes (0.0% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Embedded_Driver_Systems.elf  "Embedded_Driver_Systems.hex"
+Finished building: Embedded_Driver_Systems.hex
  
-20:26:40 **** Incremental Build of configuration Debug for project Dio_First_project ****
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Embedded_Driver_Systems.elf  "Embedded_Driver_Systems.eep"
+Finished building: Embedded_Driver_Systems.eep
+ 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Embedded_Driver_Systems.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+21:55:39 **** Clean-only build of configuration Debug for project Embedded_Driver_Systems ****
+make clean 
+rm -rf  Embedded_Driver_Systems.hex  ./MCAL/interupts/src/MCAL_interupts.o  ./MCAL/Timer/MACL_Timer0.o ./MCAL/Timer/TIM0_cfg..o  ./MCAL/DIO/src/DIO.o  ./HAL/seven/src/HAL_seven.o  ./HAL/LED/src/HAL_LED.o  ./HAL/LCD/src/HAL_LCD.o  ./HAL/Keypad/src/HAL_KEYPAD.o  ./HAL/BUTTON/src/HAL_BUTTON.o  ./LCDmain.o ./Ledmain.o ./Timermain.o ./main.o ./sevenmain.o  Embedded_Driver_Systems.eep  avrdudedummy  Embedded_Driver_Systems.lss  ./MCAL/interupts/src/MCAL_interupts.d  ./MCAL/Timer/MACL_Timer0.d ./MCAL/Timer/TIM0_cfg..d  ./MCAL/DIO/src/DIO.d  ./HAL/seven/src/HAL_seven.d  ./HAL/LED/src/HAL_LED.d  ./HAL/LCD/src/HAL_LCD.d  ./HAL/Keypad/src/HAL_KEYPAD.d  ./HAL/BUTTON/src/HAL_BUTTON.d  ./LCDmain.d ./Ledmain.d ./Timermain.d ./main.d ./sevenmain.d  Embedded_Driver_Systems.elf
+ 
+21:55:43 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
 make all 
+Building file: ../MCAL/interupts/src/MCAL_interupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/interupts/src/MCAL_interupts.d" -MT"MCAL/interupts/src/MCAL_interupts.o" -c -o "MCAL/interupts/src/MCAL_interupts.o" "../MCAL/interupts/src/MCAL_interupts.c"
+In file included from ../MCAL/interupts/src/MCAL_interupts.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCAL/interupts/src/MCAL_interupts.c
+ 
+Building file: ../MCAL/Timer/MACL_Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/MACL_Timer0.d" -MT"MCAL/Timer/MACL_Timer0.o" -c -o "MCAL/Timer/MACL_Timer0.o" "../MCAL/Timer/MACL_Timer0.c"
+Finished building: ../MCAL/Timer/MACL_Timer0.c
+ 
+Building file: ../MCAL/Timer/TIM0_cfg..c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/TIM0_cfg..d" -MT"MCAL/Timer/TIM0_cfg..o" -c -o "MCAL/Timer/TIM0_cfg..o" "../MCAL/Timer/TIM0_cfg..c"
+Finished building: ../MCAL/Timer/TIM0_cfg..c
+ 
+Building file: ../MCAL/DIO/src/DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/DIO/src/DIO.d" -MT"MCAL/DIO/src/DIO.o" -c -o "MCAL/DIO/src/DIO.o" "../MCAL/DIO/src/DIO.c"
+Finished building: ../MCAL/DIO/src/DIO.c
+ 
+Building file: ../HAL/seven/src/HAL_seven.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/seven/src/HAL_seven.d" -MT"HAL/seven/src/HAL_seven.o" -c -o "HAL/seven/src/HAL_seven.o" "../HAL/seven/src/HAL_seven.c"
+In file included from ../HAL/seven/src/HAL_seven.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/seven/src/HAL_seven.c
+ 
+Building file: ../HAL/LED/src/HAL_LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LED/src/HAL_LED.d" -MT"HAL/LED/src/HAL_LED.o" -c -o "HAL/LED/src/HAL_LED.o" "../HAL/LED/src/HAL_LED.c"
+In file included from ../HAL/LED/src/HAL_LED.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LED/src/HAL_LED.c
+ 
+Building file: ../HAL/LCD/src/HAL_LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LCD/src/HAL_LCD.d" -MT"HAL/LCD/src/HAL_LCD.o" -c -o "HAL/LCD/src/HAL_LCD.o" "../HAL/LCD/src/HAL_LCD.c"
+In file included from ../HAL/LCD/src/HAL_LCD.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LCD/src/HAL_LCD.c
+ 
+Building file: ../HAL/Keypad/src/HAL_KEYPAD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/Keypad/src/HAL_KEYPAD.d" -MT"HAL/Keypad/src/HAL_KEYPAD.o" -c -o "HAL/Keypad/src/HAL_KEYPAD.o" "../HAL/Keypad/src/HAL_KEYPAD.c"
+In file included from ../HAL/Keypad/src/HAL_KEYPAD.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/Keypad/src/HAL_KEYPAD.c
+ 
+Building file: ../HAL/BUTTON/src/HAL_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/BUTTON/src/HAL_BUTTON.d" -MT"HAL/BUTTON/src/HAL_BUTTON.o" -c -o "HAL/BUTTON/src/HAL_BUTTON.o" "../HAL/BUTTON/src/HAL_BUTTON.c"
+In file included from ../HAL/BUTTON/src/HAL_BUTTON.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/BUTTON/src/HAL_BUTTON.c
+ 
+Building file: ../LCDmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LCDmain.d" -MT"LCDmain.o" -c -o "LCDmain.o" "../LCDmain.c"
+Finished building: ../LCDmain.c
+ 
+Building file: ../Ledmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Ledmain.d" -MT"Ledmain.o" -c -o "Ledmain.o" "../Ledmain.c"
+../Ledmain.c:81:3: warning: "/*" within comment
+../Ledmain.c:86:3: warning: "/*" within comment
+Finished building: ../Ledmain.c
+ 
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+In file included from ../Timermain.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Timermain.c
+ 
 Building file: ../main.c
 Invoking: AVR Compiler
 avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:236:3: warning: "/*" within comment
+../main.c:241:3: warning: "/*" within comment
 Finished building: ../main.c
  
-Building target: Dio_First_project.elf
+Building file: ../sevenmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"sevenmain.d" -MT"sevenmain.o" -c -o "sevenmain.o" "../sevenmain.c"
+Finished building: ../sevenmain.c
+ 
+Building target: Embedded_Driver_Systems.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
+avr-gcc -Wl,-Map,Embedded_Driver_Systems.map -mmcu=atmega32 -o "Embedded_Driver_Systems.elf"  ./MCAL/interupts/src/MCAL_interupts.o  ./MCAL/Timer/MACL_Timer0.o ./MCAL/Timer/TIM0_cfg..o  ./MCAL/DIO/src/DIO.o  ./HAL/seven/src/HAL_seven.o  ./HAL/LED/src/HAL_LED.o  ./HAL/LCD/src/HAL_LCD.o  ./HAL/Keypad/src/HAL_KEYPAD.o  ./HAL/BUTTON/src/HAL_BUTTON.o  ./LCDmain.o ./Ledmain.o ./Timermain.o ./main.o ./sevenmain.o   
+Finished building target: Embedded_Driver_Systems.elf
  
 Invoking: AVR Create Extended Listing
-avr-objdump -h -S Dio_First_project.elf  >"Dio_First_project.lss"
-Finished building: Dio_First_project.lss
+avr-objdump -h -S Embedded_Driver_Systems.elf  >"Embedded_Driver_Systems.lss"
+Finished building: Embedded_Driver_Systems.lss
  
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Dio_First_project.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:    3264 bytes (10.0% Full)
-(.text + .data + .bootloader)
-
-Data:          8 bytes (0.4% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Embedded_Driver_Systems.elf  "Embedded_Driver_Systems.hex"
+Finished building: Embedded_Driver_Systems.hex
  
-20:26:46 **** Incremental Build of configuration Debug for project Dio_First_project ****
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Embedded_Driver_Systems.elf  "Embedded_Driver_Systems.eep"
+Finished building: Embedded_Driver_Systems.eep
+ 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Embedded_Driver_Systems.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+22:03:06 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
 make all 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Dio_First_project.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:    3264 bytes (10.0% Full)
-(.text + .data + .bootloader)
-
-Data:          8 bytes (0.4% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+In file included from ../Timermain.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Timermain.c: In function 'main':
+../Timermain.c:18: warning: unused variable 'buttom'
+Finished building: ../Timermain.c
  
-20:27:13 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Dio_First_project.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:    3264 bytes (10.0% Full)
-(.text + .data + .bootloader)
-
-Data:          8 bytes (0.4% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-20:28:53 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building target: Dio_First_project.elf
+Building target: Embedded_Driver_Systems.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
+avr-gcc -Wl,-Map,Embedded_Driver_Systems.map -mmcu=atmega32 -o "Embedded_Driver_Systems.elf"  ./MCAL/interupts/src/MCAL_interupts.o  ./MCAL/Timer/MACL_Timer0.o ./MCAL/Timer/TIM0_cfg..o  ./MCAL/DIO/src/DIO.o  ./HAL/seven/src/HAL_seven.o  ./HAL/LED/src/HAL_LED.o  ./HAL/LCD/src/HAL_LCD.o  ./HAL/Keypad/src/HAL_KEYPAD.o  ./HAL/BUTTON/src/HAL_BUTTON.o  ./LCDmain.o ./Ledmain.o ./Timermain.o ./main.o ./sevenmain.o   
+Finished building target: Embedded_Driver_Systems.elf
  
 Invoking: AVR Create Extended Listing
-avr-objdump -h -S Dio_First_project.elf  >"Dio_First_project.lss"
-Finished building: Dio_First_project.lss
+avr-objdump -h -S Embedded_Driver_Systems.elf  >"Embedded_Driver_Systems.lss"
+Finished building: Embedded_Driver_Systems.lss
  
 Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Dio_First_project.elf  "Dio_First_project.hex"
-Finished building: Dio_First_project.hex
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Embedded_Driver_Systems.elf  "Embedded_Driver_Systems.hex"
+Finished building: Embedded_Driver_Systems.hex
  
 Create eeprom image (ihex format)
-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Dio_First_project.elf  "Dio_First_project.eep"
-Finished building: Dio_First_project.eep
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Embedded_Driver_Systems.elf  "Embedded_Driver_Systems.eep"
+Finished building: Embedded_Driver_Systems.eep
  
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Dio_First_project.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:    3264 bytes (10.0% Full)
-(.text + .data + .bootloader)
-
-Data:          8 bytes (0.4% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Embedded_Driver_Systems.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+23:07:30 **** Clean-only build of configuration Debug for project Embedded_Driver_Systems ****
+make clean 
+rm -rf  Embedded_Driver_Systems.hex  ./MCAL/interupts/src/MCAL_interupts.o  ./MCAL/Timer/MACL_Timer0.o ./MCAL/Timer/TIM0_cfg..o  ./MCAL/DIO/src/DIO.o  ./HAL/seven/src/HAL_seven.o  ./HAL/LED/src/HAL_LED.o  ./HAL/LCD/src/HAL_LCD.o  ./HAL/Keypad/src/HAL_KEYPAD.o  ./HAL/BUTTON/src/HAL_BUTTON.o  ./LCDmain.o ./Ledmain.o ./Timermain.o ./main.o ./sevenmain.o  Embedded_Driver_Systems.eep  avrdudedummy  Embedded_Driver_Systems.lss  ./MCAL/interupts/src/MCAL_interupts.d  ./MCAL/Timer/MACL_Timer0.d ./MCAL/Timer/TIM0_cfg..d  ./MCAL/DIO/src/DIO.d  ./HAL/seven/src/HAL_seven.d  ./HAL/LED/src/HAL_LED.d  ./HAL/LCD/src/HAL_LCD.d  ./HAL/Keypad/src/HAL_KEYPAD.d  ./HAL/BUTTON/src/HAL_BUTTON.d  ./LCDmain.d ./Ledmain.d ./Timermain.d ./main.d ./sevenmain.d  Embedded_Driver_Systems.elf
  
-20:29:14 **** Incremental Build of configuration Debug for project Dio_First_project ****
+23:07:34 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
 make all 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Dio_First_project.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:    3264 bytes (10.0% Full)
-(.text + .data + .bootloader)
-
-Data:          8 bytes (0.4% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
+Building file: ../MCAL/interupts/src/MCAL_interupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/interupts/src/MCAL_interupts.d" -MT"MCAL/interupts/src/MCAL_interupts.o" -c -o "MCAL/interupts/src/MCAL_interupts.o" "../MCAL/interupts/src/MCAL_interupts.c"
+In file included from ../MCAL/interupts/src/MCAL_interupts.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCAL/interupts/src/MCAL_interupts.c
  
-20:29:19 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Dio_First_project.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:    3264 bytes (10.0% Full)
-(.text + .data + .bootloader)
-
-Data:          8 bytes (0.4% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
+Building file: ../MCAL/Timer/MACL_Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/MACL_Timer0.d" -MT"MCAL/Timer/MACL_Timer0.o" -c -o "MCAL/Timer/MACL_Timer0.o" "../MCAL/Timer/MACL_Timer0.c"
+Finished building: ../MCAL/Timer/MACL_Timer0.c
  
-20:30:03 **** Incremental Build of configuration Debug for project Dio_First_project ****
+Building file: ../MCAL/Timer/TIM0_cfg..c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/TIM0_cfg..d" -MT"MCAL/Timer/TIM0_cfg..o" -c -o "MCAL/Timer/TIM0_cfg..o" "../MCAL/Timer/TIM0_cfg..c"
+Finished building: ../MCAL/Timer/TIM0_cfg..c
+ 
+Building file: ../MCAL/DIO/src/DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/DIO/src/DIO.d" -MT"MCAL/DIO/src/DIO.o" -c -o "MCAL/DIO/src/DIO.o" "../MCAL/DIO/src/DIO.c"
+Finished building: ../MCAL/DIO/src/DIO.c
+ 
+Building file: ../HAL/seven/src/HAL_seven.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/seven/src/HAL_seven.d" -MT"HAL/seven/src/HAL_seven.o" -c -o "HAL/seven/src/HAL_seven.o" "../HAL/seven/src/HAL_seven.c"
+In file included from ../HAL/seven/src/HAL_seven.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/seven/src/HAL_seven.c
+ 
+Building file: ../HAL/LED/src/HAL_LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LED/src/HAL_LED.d" -MT"HAL/LED/src/HAL_LED.o" -c -o "HAL/LED/src/HAL_LED.o" "../HAL/LED/src/HAL_LED.c"
+In file included from ../HAL/LED/src/HAL_LED.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LED/src/HAL_LED.c
+ 
+Building file: ../HAL/LCD/src/HAL_LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LCD/src/HAL_LCD.d" -MT"HAL/LCD/src/HAL_LCD.o" -c -o "HAL/LCD/src/HAL_LCD.o" "../HAL/LCD/src/HAL_LCD.c"
+In file included from ../HAL/LCD/src/HAL_LCD.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LCD/src/HAL_LCD.c
+ 
+Building file: ../HAL/Keypad/src/HAL_KEYPAD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/Keypad/src/HAL_KEYPAD.d" -MT"HAL/Keypad/src/HAL_KEYPAD.o" -c -o "HAL/Keypad/src/HAL_KEYPAD.o" "../HAL/Keypad/src/HAL_KEYPAD.c"
+In file included from ../HAL/Keypad/src/HAL_KEYPAD.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/Keypad/src/HAL_KEYPAD.c
+ 
+Building file: ../HAL/BUTTON/src/HAL_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/BUTTON/src/HAL_BUTTON.d" -MT"HAL/BUTTON/src/HAL_BUTTON.o" -c -o "HAL/BUTTON/src/HAL_BUTTON.o" "../HAL/BUTTON/src/HAL_BUTTON.c"
+In file included from ../HAL/BUTTON/src/HAL_BUTTON.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/BUTTON/src/HAL_BUTTON.c
+ 
+Building file: ../LCDmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LCDmain.d" -MT"LCDmain.o" -c -o "LCDmain.o" "../LCDmain.c"
+Finished building: ../LCDmain.c
+ 
+Building file: ../Ledmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Ledmain.d" -MT"Ledmain.o" -c -o "Ledmain.o" "../Ledmain.c"
+../Ledmain.c:81:3: warning: "/*" within comment
+../Ledmain.c:86:3: warning: "/*" within comment
+Finished building: ../Ledmain.c
+ 
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+In file included from ../Timermain.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Timermain.c: In function 'main':
+../Timermain.c:24: error: 'TIM0_1024_PRESCALER_SELECT' undeclared (first use in this function)
+../Timermain.c:24: error: (Each undeclared identifier is reported only once
+../Timermain.c:24: error: for each function it appears in.)
+../Timermain.c:18: warning: unused variable 'buttom'
+make: *** [Timermain.o] Error 1
+23:14:47 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
 make all 
-Building target: Dio_First_project.elf
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+In file included from ../Timermain.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Timermain.c: In function 'main':
+../Timermain.c:29: error: void value not ignored as it ought to be
+make: *** [Timermain.o] Error 1
+23:15:23 **** Clean-only build of configuration Debug for project Embedded_Driver_Systems ****
+make clean 
+rm -rf  Embedded_Driver_Systems.hex  ./MCAL/interupts/src/MCAL_interupts.o  ./MCAL/Timer/MACL_Timer0.o ./MCAL/Timer/TIM0_cfg..o  ./MCAL/DIO/src/DIO.o  ./HAL/seven/src/HAL_seven.o  ./HAL/LED/src/HAL_LED.o  ./HAL/LCD/src/HAL_LCD.o  ./HAL/Keypad/src/HAL_KEYPAD.o  ./HAL/BUTTON/src/HAL_BUTTON.o  ./LCDmain.o ./Ledmain.o ./Timermain.o ./main.o ./sevenmain.o  Embedded_Driver_Systems.eep  avrdudedummy  Embedded_Driver_Systems.lss  ./MCAL/interupts/src/MCAL_interupts.d  ./MCAL/Timer/MACL_Timer0.d ./MCAL/Timer/TIM0_cfg..d  ./MCAL/DIO/src/DIO.d  ./HAL/seven/src/HAL_seven.d  ./HAL/LED/src/HAL_LED.d  ./HAL/LCD/src/HAL_LCD.d  ./HAL/Keypad/src/HAL_KEYPAD.d  ./HAL/BUTTON/src/HAL_BUTTON.d  ./LCDmain.d ./Ledmain.d ./Timermain.d ./main.d ./sevenmain.d  Embedded_Driver_Systems.elf
+ 
+23:15:23 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
+make all 
+Building file: ../MCAL/interupts/src/MCAL_interupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/interupts/src/MCAL_interupts.d" -MT"MCAL/interupts/src/MCAL_interupts.o" -c -o "MCAL/interupts/src/MCAL_interupts.o" "../MCAL/interupts/src/MCAL_interupts.c"
+In file included from ../MCAL/interupts/src/MCAL_interupts.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCAL/interupts/src/MCAL_interupts.c
+ 
+Building file: ../MCAL/Timer/MACL_Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/MACL_Timer0.d" -MT"MCAL/Timer/MACL_Timer0.o" -c -o "MCAL/Timer/MACL_Timer0.o" "../MCAL/Timer/MACL_Timer0.c"
+Finished building: ../MCAL/Timer/MACL_Timer0.c
+ 
+Building file: ../MCAL/Timer/TIM0_cfg..c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/Timer/TIM0_cfg..d" -MT"MCAL/Timer/TIM0_cfg..o" -c -o "MCAL/Timer/TIM0_cfg..o" "../MCAL/Timer/TIM0_cfg..c"
+Finished building: ../MCAL/Timer/TIM0_cfg..c
+ 
+Building file: ../MCAL/DIO/src/DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/DIO/src/DIO.d" -MT"MCAL/DIO/src/DIO.o" -c -o "MCAL/DIO/src/DIO.o" "../MCAL/DIO/src/DIO.c"
+Finished building: ../MCAL/DIO/src/DIO.c
+ 
+Building file: ../HAL/seven/src/HAL_seven.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/seven/src/HAL_seven.d" -MT"HAL/seven/src/HAL_seven.o" -c -o "HAL/seven/src/HAL_seven.o" "../HAL/seven/src/HAL_seven.c"
+In file included from ../HAL/seven/src/HAL_seven.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/seven/src/HAL_seven.c
+ 
+Building file: ../HAL/LED/src/HAL_LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LED/src/HAL_LED.d" -MT"HAL/LED/src/HAL_LED.o" -c -o "HAL/LED/src/HAL_LED.o" "../HAL/LED/src/HAL_LED.c"
+In file included from ../HAL/LED/src/HAL_LED.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LED/src/HAL_LED.c
+ 
+Building file: ../HAL/LCD/src/HAL_LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LCD/src/HAL_LCD.d" -MT"HAL/LCD/src/HAL_LCD.o" -c -o "HAL/LCD/src/HAL_LCD.o" "../HAL/LCD/src/HAL_LCD.c"
+In file included from ../HAL/LCD/src/HAL_LCD.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LCD/src/HAL_LCD.c
+ 
+Building file: ../HAL/Keypad/src/HAL_KEYPAD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/Keypad/src/HAL_KEYPAD.d" -MT"HAL/Keypad/src/HAL_KEYPAD.o" -c -o "HAL/Keypad/src/HAL_KEYPAD.o" "../HAL/Keypad/src/HAL_KEYPAD.c"
+In file included from ../HAL/Keypad/src/HAL_KEYPAD.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/Keypad/src/HAL_KEYPAD.c
+ 
+Building file: ../HAL/BUTTON/src/HAL_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/BUTTON/src/HAL_BUTTON.d" -MT"HAL/BUTTON/src/HAL_BUTTON.o" -c -o "HAL/BUTTON/src/HAL_BUTTON.o" "../HAL/BUTTON/src/HAL_BUTTON.c"
+In file included from ../HAL/BUTTON/src/HAL_BUTTON.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/BUTTON/src/HAL_BUTTON.c
+ 
+Building file: ../LCDmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LCDmain.d" -MT"LCDmain.o" -c -o "LCDmain.o" "../LCDmain.c"
+Finished building: ../LCDmain.c
+ 
+Building file: ../Ledmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Ledmain.d" -MT"Ledmain.o" -c -o "Ledmain.o" "../Ledmain.c"
+../Ledmain.c:81:3: warning: "/*" within comment
+../Ledmain.c:86:3: warning: "/*" within comment
+Finished building: ../Ledmain.c
+ 
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+In file included from ../Timermain.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Timermain.c: In function 'main':
+../Timermain.c:29: error: void value not ignored as it ought to be
+make: *** [Timermain.o] Error 1
+23:16:04 **** Incremental Build of configuration Debug for project Embedded_Driver_Systems ****
+make all 
+Building file: ../Timermain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timermain.d" -MT"Timermain.o" -c -o "Timermain.o" "../Timermain.c"
+In file included from ../Timermain.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Timermain.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:236:3: warning: "/*" within comment
+../main.c:241:3: warning: "/*" within comment
+Finished building: ../main.c
+ 
+Building file: ../sevenmain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"sevenmain.d" -MT"sevenmain.o" -c -o "sevenmain.o" "../sevenmain.c"
+Finished building: ../sevenmain.c
+ 
+Building target: Embedded_Driver_Systems.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
+avr-gcc -Wl,-Map,Embedded_Driver_Systems.map -mmcu=atmega32 -o "Embedded_Driver_Systems.elf"  ./MCAL/interupts/src/MCAL_interupts.o  ./MCAL/Timer/MACL_Timer0.o ./MCAL/Timer/TIM0_cfg..o  ./MCAL/DIO/src/DIO.o  ./HAL/seven/src/HAL_seven.o  ./HAL/LED/src/HAL_LED.o  ./HAL/LCD/src/HAL_LCD.o  ./HAL/Keypad/src/HAL_KEYPAD.o  ./HAL/BUTTON/src/HAL_BUTTON.o  ./LCDmain.o ./Ledmain.o ./Timermain.o ./main.o ./sevenmain.o   
+Finished building target: Embedded_Driver_Systems.elf
  
 Invoking: AVR Create Extended Listing
-avr-objdump -h -S Dio_First_project.elf  >"Dio_First_project.lss"
-Finished building: Dio_First_project.lss
+avr-objdump -h -S Embedded_Driver_Systems.elf  >"Embedded_Driver_Systems.lss"
+Finished building: Embedded_Driver_Systems.lss
  
 Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Dio_First_project.elf  "Dio_First_project.hex"
-Finished building: Dio_First_project.hex
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Embedded_Driver_Systems.elf  "Embedded_Driver_Systems.hex"
+Finished building: Embedded_Driver_Systems.hex
  
 Create eeprom image (ihex format)
-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Dio_First_project.elf  "Dio_First_project.eep"
-Finished building: Dio_First_project.eep
- 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Dio_First_project.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:    3264 bytes (10.0% Full)
-(.text + .data + .bootloader)
-
-Data:          8 bytes (0.4% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-20:30:17 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Dio_First_project.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:    3264 bytes (10.0% Full)
-(.text + .data + .bootloader)
-
-Data:          8 bytes (0.4% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-20:30:23 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Dio_First_project.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:    3264 bytes (10.0% Full)
-(.text + .data + .bootloader)
-
-Data:          8 bytes (0.4% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-20:32:22 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building target: Dio_First_project.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Dio_First_project.elf  "Dio_First_project.hex"
-Finished building: Dio_First_project.hex
- 
-Create eeprom image (ihex format)
-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Dio_First_project.elf  "Dio_First_project.eep"
-Finished building: Dio_First_project.eep
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Embedded_Driver_Systems.elf  "Embedded_Driver_Systems.eep"
+Finished building: Embedded_Driver_Systems.eep
  
 Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.02s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: reading input file "Dio_First_project.hex"
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: writing flash (3264 bytes):
-
-Writing | ################################################## | 100% 27.53s
-
-avrdude: 3264 bytes of flash written
-avrdude: verifying flash memory against Dio_First_project.hex:
-avrdude: load data flash data from input file Dio_First_project.hex:
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: input file Dio_First_project.hex contains 3264 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 14.67s
-
-avrdude: verifying ...
-avrdude: 3264 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-20:34:05 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../main.c: In function 'main':
-../main.c:22: error: lvalue required as left operand of assignment
-../main.c:24: error: lvalue required as left operand of assignment
-make: *** [main.o] Error 1
-20:36:51 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../main.c: In function 'main':
-../main.c:23: error: lvalue required as left operand of assignment
-../main.c:25: error: lvalue required as left operand of assignment
-make: *** [main.o] Error 1
-20:37:46 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../main.c: In function 'main':
-../main.c:23: error: lvalue required as left operand of assignment
-../main.c:25: error: lvalue required as left operand of assignment
-make: *** [main.o] Error 1
-20:38:03 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../main.c: In function 'main':
-../main.c:23: error: lvalue required as left operand of assignment
-../main.c:25: error: lvalue required as left operand of assignment
-make: *** [main.o] Error 1
-20:38:56 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../main.c
- 
-Building target: Dio_First_project.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Dio_First_project.elf  "Dio_First_project.hex"
-Finished building: Dio_First_project.hex
- 
-Create eeprom image (ihex format)
-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Dio_First_project.elf  "Dio_First_project.eep"
-Finished building: Dio_First_project.eep
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.02s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: reading input file "Dio_First_project.hex"
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: writing flash (3264 bytes):
-
-Writing | ################################################## | 100% 27.60s
-
-avrdude: 3264 bytes of flash written
-avrdude: verifying flash memory against Dio_First_project.hex:
-avrdude: load data flash data from input file Dio_First_project.hex:
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: input file Dio_First_project.hex contains 3264 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 15.14s
-
-avrdude: verifying ...
-avrdude: 3264 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-20:40:40 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.03s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: reading input file "Dio_First_project.hex"
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: writing flash (3264 bytes):
-
-Writing | ################################################## | 100% 27.38s
-
-avrdude: 3264 bytes of flash written
-avrdude: verifying flash memory against Dio_First_project.hex:
-avrdude: load data flash data from input file Dio_First_project.hex:
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: input file Dio_First_project.hex contains 3264 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 15.14s
-
-avrdude: verifying ...
-avrdude: 3264 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-20:41:59 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../main.c
- 
-Building target: Dio_First_project.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Dio_First_project.elf  "Dio_First_project.hex"
-Finished building: Dio_First_project.hex
- 
-Create eeprom image (ihex format)
-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Dio_First_project.elf  "Dio_First_project.eep"
-Finished building: Dio_First_project.eep
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.02s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: reading input file "Dio_First_project.hex"
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: writing flash (3492 bytes):
-
-Writing | ################################################## | 100% 29.50s
-
-avrdude: 3492 bytes of flash written
-avrdude: verifying flash memory against Dio_First_project.hex:
-avrdude: load data flash data from input file Dio_First_project.hex:
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: input file Dio_First_project.hex contains 3492 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 16.19s
-
-avrdude: verifying ...
-avrdude: 3492 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-20:45:33 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../main.c: In function 'main':
-../main.c:19: error: lvalue required as left operand of assignment
-../main.c:21: error: lvalue required as left operand of assignment
-make: *** [main.o] Error 1
-20:45:38 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../main.c: In function 'main':
-../main.c:19: error: lvalue required as left operand of assignment
-../main.c:21: error: lvalue required as left operand of assignment
-make: *** [main.o] Error 1
-20:46:21 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../main.c: In function 'main':
-../main.c:19: error: lvalue required as left operand of assignment
-../main.c:21: error: lvalue required as left operand of assignment
-make: *** [main.o] Error 1
-20:52:48 **** Build of configuration Release for project BlinkyLight ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:BlinkyLight.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-20:52:48 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../main.c: In function 'main':
-../main.c:19: error: lvalue required as left operand of assignment
-../main.c:21: error: lvalue required as left operand of assignment
-make: *** [main.o] Error 1
-20:54:51 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../main.c
- 
-Building target: Dio_First_project.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Dio_First_project.elf  "Dio_First_project.hex"
-Finished building: Dio_First_project.hex
- 
-Create eeprom image (ihex format)
-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Dio_First_project.elf  "Dio_First_project.eep"
-Finished building: Dio_First_project.eep
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-20:54:58 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.02s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: reading input file "Dio_First_project.hex"
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: writing flash (3492 bytes):
-
-Writing | ################################################## | 100% 29.55s
-
-avrdude: 3492 bytes of flash written
-avrdude: verifying flash memory against Dio_First_project.hex:
-avrdude: load data flash data from input file Dio_First_project.hex:
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: input file Dio_First_project.hex contains 3492 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 15.75s
-
-avrdude: verifying ...
-avrdude: 3492 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-20:56:05 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../main.c
- 
-Building target: Dio_First_project.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Dio_First_project.elf  "Dio_First_project.hex"
-Finished building: Dio_First_project.hex
- 
-Create eeprom image (ihex format)
-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Dio_First_project.elf  "Dio_First_project.eep"
-Finished building: Dio_First_project.eep
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.03s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: reading input file "Dio_First_project.hex"
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: writing flash (3492 bytes):
-
-Writing | ################################################## | 100% 29.53s
-
-avrdude: 3492 bytes of flash written
-avrdude: verifying flash memory against Dio_First_project.hex:
-avrdude: load data flash data from input file Dio_First_project.hex:
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: input file Dio_First_project.hex contains 3492 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 15.76s
-
-avrdude: verifying ...
-avrdude: 3492 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-21:02:05 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../main.c
- 
-Building target: Dio_First_project.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Dio_First_project.elf  "Dio_First_project.hex"
-Finished building: Dio_First_project.hex
- 
-Create eeprom image (ihex format)
-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Dio_First_project.elf  "Dio_First_project.eep"
-Finished building: Dio_First_project.eep
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-21:02:11 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.03s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: reading input file "Dio_First_project.hex"
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: writing flash (3520 bytes):
-
-Writing | ################################################## | 100% 29.79s
-
-avrdude: 3520 bytes of flash written
-avrdude: verifying flash memory against Dio_First_project.hex:
-avrdude: load data flash data from input file Dio_First_project.hex:
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: input file Dio_First_project.hex contains 3520 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 15.66s
-
-avrdude: verifying ...
-avrdude: 3520 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-21:03:25 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../main.c
- 
-Building target: Dio_First_project.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Dio_First_project.elf  "Dio_First_project.hex"
-Finished building: Dio_First_project.hex
- 
-Create eeprom image (ihex format)
-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Dio_First_project.elf  "Dio_First_project.eep"
-Finished building: Dio_First_project.eep
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.02s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: reading input file "Dio_First_project.hex"
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: writing flash (3520 bytes):
-
-Writing | ################################################## | 100% 29.77s
-
-avrdude: 3520 bytes of flash written
-avrdude: verifying flash memory against Dio_First_project.hex:
-avrdude: load data flash data from input file Dio_First_project.hex:
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: input file Dio_First_project.hex contains 3520 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 15.67s
-
-avrdude: verifying ...
-avrdude: 3520 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-21:13:35 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-21:18:43 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-21:22:45 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-21:37:52 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../main.c
- 
-Building target: Dio_First_project.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Dio_First_project.elf  "Dio_First_project.hex"
-Finished building: Dio_First_project.hex
- 
-Create eeprom image (ihex format)
-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Dio_First_project.elf  "Dio_First_project.eep"
-Finished building: Dio_First_project.eep
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-21:46:20 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../main.c
- 
-Building target: Dio_First_project.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Dio_First_project.elf  "Dio_First_project.hex"
-Finished building: Dio_First_project.hex
- 
-Create eeprom image (ihex format)
-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Dio_First_project.elf  "Dio_First_project.eep"
-Finished building: Dio_First_project.eep
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-21:46:27 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.02s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: reading input file "Dio_First_project.hex"
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: writing flash (190 bytes):
-
-Writing | ################################################## | 100% 1.59s
-
-avrdude: 190 bytes of flash written
-avrdude: verifying flash memory against Dio_First_project.hex:
-avrdude: load data flash data from input file Dio_First_project.hex:
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: input file Dio_First_project.hex contains 190 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 0.88s
-
-avrdude: verifying ...
-avrdude: 190 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-21:46:57 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../main.c
- 
-Building target: Dio_First_project.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Dio_First_project.elf  "Dio_First_project.hex"
-Finished building: Dio_First_project.hex
- 
-Create eeprom image (ihex format)
-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Dio_First_project.elf  "Dio_First_project.eep"
-Finished building: Dio_First_project.eep
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.02s
-
-avrdude: Device signature = 0x1e9502
-avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
-avrdude: erasing chip
-avrdude: reading input file "Dio_First_project.hex"
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: writing flash (198 bytes):
-
-Writing | ################################################## | 100% 1.66s
-
-avrdude: 198 bytes of flash written
-avrdude: verifying flash memory against Dio_First_project.hex:
-avrdude: load data flash data from input file Dio_First_project.hex:
-avrdude: input file Dio_First_project.hex auto detected as Intel Hex
-avrdude: input file Dio_First_project.hex contains 198 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 0.92s
-
-avrdude: verifying ...
-avrdude: 198 bytes of flash verified
-
-avrdude done.  Thank you.
-
-Finished building: avrdudedummy
- 
-21:54:22 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
-In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
-                 from ../main.c:10:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../main.c
- 
-Building target: Dio_First_project.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Dio_First_project.map -mmcu=atmega32 -o "Dio_First_project.elf"  ./main.o   
-Finished building target: Dio_First_project.elf
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Dio_First_project.elf  "Dio_First_project.hex"
-Finished building: Dio_First_project.hex
- 
-Create eeprom image (ihex format)
-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Dio_First_project.elf  "Dio_First_project.eep"
-Finished building: Dio_First_project.eep
- 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-21:56:46 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-18:48:55 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-18:54:28 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
-avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
-make: *** [avrdudedummy] Error 1
-20:13:22 **** Incremental Build of configuration Debug for project Dio_First_project ****
-make all 
-Invoking: AVRDude
-C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Dio_First_project.hex:a
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:Embedded_Driver_Systems.hex:a
 avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
 make: *** [avrdudedummy] Error 1
